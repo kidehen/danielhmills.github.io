@@ -1,4 +1,5 @@
-
+{ "head": { "link": [], "vars": ["avenger", "name"] },
+  "results": { "distinct": false, "ordered": true, "bindings": [
     { "avenger": { "type": "uri", "value": "#ironman" }	, "name": { "type": "literal", "value": "Iron Man" }},
     { "avenger": { "type": "uri", "value": "#warmachine" }	, "name": { "type": "literal", "value": "War Machine" }},
     { "avenger": { "type": "uri", "value": "#nebula" }	, "name": { "type": "literal", "value": "Nebula" }},
@@ -9,4 +10,4 @@
     { "avenger": { "type": "uri", "value": "#captainamerica" }	, "name": { "type": "literal", "value": "Captain America" }},
     { "avenger": { "type": "uri", "value": "#thor" }	, "name": { "type": "literal", "value": "Thor" }},
     { "avenger": { "type": "uri", "value": "#antman" }	, "name": { "type": "literal", "value": "Ant-Man" }},
-    { "avenger": { "type": "uri", "value": "#captainmarvel" }	, "name": { "type": "literal", "value": "Captain Marvel" }} 
+    { "avenger": { "type": "uri", "value": "#captainmarvel" }	, "name": { "type": "literal", "value": "Captain Marvel" }} ] } }
