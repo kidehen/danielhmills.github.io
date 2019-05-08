@@ -11,7 +11,7 @@ $(document).ready( function () {
     $('#myTable').DataTable({
     "ajaxSource": "../assets/data/decimation.json",
     "columns":[
-    { "data": "results.bindings.name.value" }
+    { "data": "name.value" }
     ]
     });
 } );
