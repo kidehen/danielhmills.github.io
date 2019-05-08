@@ -11,8 +11,7 @@
     $('#myTable').DataTable({
     "ajaxSource": "../assets/data/survivors.json",
     "columns":[
-        {"bindings": "name.value" },
-        {"bindings":"avenger.value"}    
+        {"data":"avenger.value"}    
     ]
     });
 } ); 

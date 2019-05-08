@@ -1,5 +1,5 @@
 {
-  "bindings": [
+  "data": [
     { "avenger": { "type": "uri", 
                     "value": "#ironman" }, 
       "name":    { "type": "literal", 
