@@ -9,7 +9,7 @@
 
 $(document).ready( function () {
     $('#myTable').DataTable({
-    "ajax": "../assets/data/survivors.json",
+    "ajaxSource": "../assets/data/survivors.json",
     "columns":[
     { "bindings": "avenger.type" }
     ]
