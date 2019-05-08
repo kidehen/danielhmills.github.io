@@ -9,7 +9,9 @@
 
 $(document).ready( function () {
     $('#myTable').DataTable({
-    "ajax": "../assets/data/survivors.txt",
-    
+    "ajax": "../assets/data/survivors.json",
+    "columns":[
+    { "bindings": "avenger.type" }
+    ]
     });
 } );
