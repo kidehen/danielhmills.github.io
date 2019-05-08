@@ -1,4 +1,4 @@
-  { avenger: { type: 'uri', value: '#ironman' },
+  [ { avenger: { type: 'uri', value: '#ironman' },
     name: { type: 'literal', value: 'Iron Man' } },
   { avenger: { type: 'uri', value: '#warmachine' },
     name: { type: 'literal', value: 'War Machine' } },
@@ -19,4 +19,4 @@
   { avenger: { type: 'uri', value: '#antman' },
     name: { type: 'literal', value: 'Ant-Man' } },
   { avenger: { type: 'uri', value: '#captainmarvel' },
-    name: { type: 'literal', value: 'Captain Marvel' } }
+    name: { type: 'literal', value: 'Captain Marvel' } } ]
