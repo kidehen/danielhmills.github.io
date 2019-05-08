@@ -9,9 +9,7 @@
 
 $(document).ready( function () {
     $('#myTable').DataTable({
-    "ajaxSource": "../assets/data/survivors.json",
-    "columns":[
-    { "bindings": "name.type" }
-    ]
+    "ajax": "../assets/data/survivors.json",
+    
     });
 } );
