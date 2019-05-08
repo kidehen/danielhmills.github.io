@@ -11,7 +11,7 @@
     $('#myTable').DataTable({
     "ajaxSource": "../assets/data/survivors.json",
     "columns":[
-        {"data":"avenger.value"}    
+        {"results.bindings":"callret-0.value"}    
     ]
     });
 } ); 
