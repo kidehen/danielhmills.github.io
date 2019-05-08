@@ -9,7 +9,7 @@
 
 $(document).ready( function () {
     $('#myTable').DataTable({
-    "ajax": "../assets/data/survivors.json",
+    "ajax": "../assets/data/survivors.txt",
     
     });
 } );
