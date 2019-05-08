@@ -1,14 +1,1 @@
-{ distinct: false,
-  ordered: true,
-  bindings:
-   [ { avenger: [Object], name: [Object] },
-     { avenger: [Object], name: [Object] },
-     { avenger: [Object], name: [Object] },
-     { avenger: [Object], name: [Object] },
-     { avenger: [Object], name: [Object] },
-     { avenger: [Object], name: [Object] },
-     { avenger: [Object], name: [Object] },
-     { avenger: [Object], name: [Object] },
-     { avenger: [Object], name: [Object] },
-     { avenger: [Object], name: [Object] },
-     { avenger: [Object], name: [Object] } ] }
+{"distinct":false,"ordered":true,"bindings":[{"avenger":{"type":"uri","value":"#ironman"},"name":{"type":"literal","value":"Iron Man"}},{"avenger":{"type":"uri","value":"#warmachine"},"name":{"type":"literal","value":"War Machine"}},{"avenger":{"type":"uri","value":"#nebula"},"name":{"type":"literal","value":"Nebula"}},{"avenger":{"type":"uri","value":"#blackwidow"},"name":{"type":"literal","value":"Black Widow"}},{"avenger":{"type":"uri","value":"#hulk"},"name":{"type":"literal","value":"Hulk"}},{"avenger":{"type":"uri","value":"#hawkeye"},"name":{"type":"literal","value":"Hawkeye"}},{"avenger":{"type":"uri","value":"#rocket"},"name":{"type":"literal","value":"Rocket"}},{"avenger":{"type":"uri","value":"#captainamerica"},"name":{"type":"literal","value":"Captain America"}},{"avenger":{"type":"uri","value":"#thor"},"name":{"type":"literal","value":"Thor"}},{"avenger":{"type":"uri","value":"#antman"},"name":{"type":"literal","value":"Ant-Man"}},{"avenger":{"type":"uri","value":"#captainmarvel"},"name":{"type":"literal","value":"Captain Marvel"}}]}
