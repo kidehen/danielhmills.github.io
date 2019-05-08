@@ -9,9 +9,9 @@
 
    $(document).ready( function () {
     $('#myTable').DataTable({
-    "ajaxSource": {url:"../assets/data/survivors.json",dataSrc:"results"},
+    "ajaxSource": {url:"../assets/data/survivors.json",dataSrc:"bindings.0"},
     "columns":[
-        {"results":"callret-0.value"}    
+        {"bindings":"callret-0.value"}    
     ]
     });
 } ); 
