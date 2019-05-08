@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="../assets/css/Article-List.css">
+    <link rel="stylesheet" href="../assets/css/datatables.css">
     <link rel="stylesheet" href="../assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
@@ -84,11 +85,12 @@
                         </div>
                         <div class="card">
                             <div class="card-header" role="tab">
-                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-3" href="div#accordion-1 .item-3">Query: Who Survived The Snap?</a></h5>
+                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="true" aria-controls="accordion-1 .item-3" href="div#accordion-1 .item-3">Query: Who Survived The Snap?</a></h5>
                             </div>
-                            <div class="collapse item-3" role="tabpanel" data-parent="#accordion-1">
+                            <div class="collapse show item-3" role="tabpanel" data-parent="#accordion-1">
                                 <div class="card-body">
-                                    <p class="card-text">PREFIX endgame: &lt;#&gt;<br><br>SELECT ?avenger ?name&nbsp;FROM &lt;urn:mcu:endgame&gt;<br>{<br>?avenger schema:name ?name;<br>endgame:survivedDecimation "true"^^xsd:boolean.<br>}</p>
+                                    <p class="card-text">PREFIX endgame: &lt;#&gt;<br><br>SELECT <br>?avenger <br>?name&nbsp;<br>FROM &lt;urn:mcu:endgame&gt;<br>WHERE<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;?avenger
+                                        schema:name ?name;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;endgame:survivedDecimation "true"^^xsd:boolean.<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p>
                                 </div>
                             </div>
                         </div>
@@ -120,8 +122,8 @@
                         </div>
                     </div><strong>Result:</strong></div>
             </div>
-            <div class="table-responsive text-center sparql" style="width: 815px;padding: 0;padding-left: 122px;">
-                <table class="table">
+            <div class="table-responsive text-center" style="width: 815px;padding: 0;padding-left: 122px;">
+                <table class="table" id="myTable">
                     <thead>
                         <tr>
                             <th>Column 1</th>
@@ -144,7 +146,8 @@
     </div>
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../assets/js/test-table.js"></script>
+    <script src="../assets/js/datatables.min.js"></script>
+    <script src="../assets/js/table.js"></script>
 </body>
 
 </html>
