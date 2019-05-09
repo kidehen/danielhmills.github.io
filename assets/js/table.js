@@ -13,7 +13,7 @@
     "dataSrc": "0.result",
 
     "columns":[
-        {"data":"callret-0.value"}    
+        {"result":"callret-0.value"}    
     ]
     });
 } ); 
