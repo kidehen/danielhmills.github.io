@@ -118,7 +118,7 @@ endgame:survivedDecimation "true"^^xsd:boolean.
 
 
 <#ThanosFight1>
-a endgame:battle;
+a endgame:Battle;
 endgame:heroes <#captainmarvel>,
                <#captainamerica>,
                <#thor>,

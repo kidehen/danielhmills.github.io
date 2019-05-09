@@ -36,7 +36,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="display-4 text-center" style="padding-top: 41px;padding-bottom: 25px;">Data Exlploration of Avengers: Endgame</h1>
+                    <h1 class="display-4 text-center" style="padding-top: 41px;padding-bottom: 25px;">Data Exploration of Avengers: Endgame</h1>
                     <h3 class="text-center"></h3>
                 </div>
             </div>
@@ -160,6 +160,56 @@
                         <div class="card">
                             <div class="card-header" role="tab">
                                 <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-1" href="div#accordion-1 .item-1">Query: Which Surviving Avenger(s) went to fight Thanos&nbsp;</a></h5>
+                            </div>
+                            <div class="collapse item-1" role="tabpanel" data-parent="#accordion-1">
+                                <div class="card-body">
+                                    <p class="card-text">PREFIX endgame: &lt;#&gt;<br><br>SELECT DISTINCT <br>?heroes<br>FROM <br>{<br>?s a endgame:Avenger;<br>schema:name ?heroes;<br>endgame:survivedDecimation "true"^^xsd:boolean;<br>^endgame:heroes endgame:ThanosFight1.<br>}<br><br></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-2" href="div#accordion-1 .item-2">Query: Which Surviving Avenger(s) went to fight Thanos ? (Result)</a></h5>
+                            </div>
+                            <div class="collapse item-2" role="tabpanel" data-parent="#accordion-1">
+                                <div class="card-body">
+                                    <p class="card-text">heroes<br>ANY<br>--------<br> &nbsp;War Machine<br> &nbsp;Nebula<br> &nbsp;Black Widow<br> &nbsp;Rocket<br> &nbsp;Captain America<br>&nbsp;Thor<br> &nbsp;Captain Marvel<br></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-3" href="div#accordion-1 .item-3">(Optional): Live Result Demonstrations</a></h5>
+                            </div>
+                            <div class="collapse item-3" role="tabpanel" data-parent="#accordion-1">
+                                <div class="card-body">
+                                    <ul>
+                                        <li><a href="http://demo.openlinksw.com:8890/sparql?default-graph-uri=&amp;qtxt=PREFIX%20endgame%3A%20%3C%23%3E%0A%0ASELECT%0A%3Favenger%0A%3Fname%20%0AFROM%20%3Curn%3Amcu%3Aendgame%3E%0AWHERE%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Favenger%20schema%3Aname%20%3Fname%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20endgame%3AsurvivedDecimation%20%22true%22%5E%5Exsd%3Aboolean.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D&amp;should-sponge=&amp;format=text%2Fx-html%2Btr&amp;timeout=20000">Which Avengers Survived The Snap (Query Definition)</a></li>
+                                        <li><a href="http://demo.openlinksw.com:8890/sparql?default-graph-uri=&amp;query=PREFIX+endgame%3A+%3C%23%3E%0D%0A%0D%0ASELECT%0D%0A%3Favenger%0D%0A%3Fname+%0D%0AFROM+%3Curn%3Amcu%3Aendgame%3E%0D%0AWHERE%0D%0A++++++++++++%7B%0D%0A+++++++++++++++%3Favenger+schema%3Aname+%3Fname%3B%0D%0A+++++++++++++++endgame%3AsurvivedDecimation+%22true%22%5E%5Exsd%3Aboolean.%0D%0A++++++++++++++%7D&amp;should-sponge=&amp;format=text%2Fx-html%2Btr&amp;timeout=20000">Which Avengers Survived The Snap (Query Result)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive" style="margin-top: 23px;">
+                        <table class="table" id="myTable2">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <h3>Part 3: The Time Heist</h3>
+                    <p class="visible">Thanos explains that he destroyed the Infinity Stones in order to keep the results of his work permanant. 5 Years after Thano's death by Thor, the remaining Avengers on Earth decide to time travel to past events in Alternate timelines;
+                        where the Infnity Stones are present.&nbsp;</p>
+                    <div role="tablist" id="accordion-1">
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-1" href="div#accordion-1 .item-1">Query: Where is each Infinity Stone Located. Which movie, does this location reference (or not), and which Avengers are going after it? &nbsp;&nbsp;</a></h5>
                             </div>
                             <div class="collapse item-1" role="tabpanel" data-parent="#accordion-1">
                                 <div class="card-body">
