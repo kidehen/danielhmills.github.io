@@ -11,6 +11,7 @@
     $('#myTable').DataTable({
     "ajaxSource": "../assets/data/survivors.json",
     "dataSrc": "0.data",
+    "lengthMenu": [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]],
 
     "columns":[
         {"data":"callret-0.value"}    
