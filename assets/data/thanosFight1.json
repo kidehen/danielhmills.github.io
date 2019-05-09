@@ -1,0 +1,46 @@
+{ 
+    "data": [
+      {
+        "name": {
+          "type": "literal",
+          "value": "War Machine"
+        }
+      },
+      {
+        "name": {
+          "type": "literal",
+          "value": "Nebula"
+        }
+      },
+      {
+        "name": {
+          "type": "literal",
+          "value": "Black Widow"
+        }
+      },
+      {
+        "name": {
+          "type": "literal",
+          "value": "Rocket"
+        }
+      },
+      {
+        "name": {
+          "type": "literal",
+          "value": "Captain America"
+        }
+      },
+      {
+        "name": {
+          "type": "literal",
+          "value": "Thor"
+        }
+      },
+      {
+        "name": {
+          "type": "literal",
+          "value": "Captain Marvel"
+        }
+      }
+    ]
+}
