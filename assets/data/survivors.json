@@ -1,14 +1,6 @@
 {
-  "head": {
-    "link": [],
-    "vars": [
-      "callret-0"
-    ]
-  },
-  "results": {
-    "distinct": false,
-    "ordered": true,
-    "bindings": [
+  
+    "data": [
       {
         "callret-0": {
           "type": "literal",
@@ -76,5 +68,5 @@
         }
       }
     ]
-  }
+  
 }

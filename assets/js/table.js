@@ -10,7 +10,7 @@
    $(document).ready( function () {
     $('#myTable').DataTable({
     "ajaxSource": "../assets/data/survivors.json",
-    "dataSrc": "0.results.bindings",
+    "dataSrc": "data",
 
     "columns":[
         {"data":"callret-0.value"}    
