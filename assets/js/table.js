@@ -10,10 +10,10 @@
    $(document).ready( function () {
     $('#myTable').DataTable({
     "ajaxSource": "../assets/data/survivors.json",
-    "dataSrc": "results.bindings.0",
+    "dataSrc": "0.results.bindings",
 
     "columns":[
-        {"bindings":"callret-0.value"}    
+        {"data":"callret-0.value"}    
     ]
     });
 } ); 
