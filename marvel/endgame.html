@@ -209,7 +209,7 @@
                     <div role="tablist" id="accordion-1">
                         <div class="card">
                             <div class="card-header" role="tab">
-                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-1" href="div#accordion-1 .item-1">Query: Where is each Infinity Stone Located. Which movie, does this location reference (or not), and which Avengers are going after it? &nbsp;&nbsp;</a></h5>
+                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-1" href="div#accordion-1 .item-1">Query: Which stone heist did each Avenger take part in? Which year did they visit? Which timeline did it take place in? Was the heist successful?&nbsp;</a></h5>
                             </div>
                             <div class="collapse item-1" role="tabpanel" data-parent="#accordion-1">
                                 <div class="card-body">
@@ -229,13 +229,13 @@
                         </div>
                         <div class="card">
                             <div class="card-header" role="tab">
-                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-3" href="div#accordion-1 .item-3">(Optional): Live Result Demonstrations</a></h5>
+                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="true" aria-controls="accordion-1 .item-3" href="div#accordion-1 .item-3">(Optional): Live Result Demonstrations</a></h5>
                             </div>
-                            <div class="collapse item-3" role="tabpanel" data-parent="#accordion-1">
+                            <div class="collapse show item-3" role="tabpanel" data-parent="#accordion-1">
                                 <div class="card-body">
                                     <ul>
-                                        <li><a href="http://demo.openlinksw.com:8890/sparql?default-graph-uri=&amp;qtxt=PREFIX%20endgame%3A%20%3C%23%3E%0A%0ASELECT%0A%3Favenger%0A%3Fname%20%0AFROM%20%3Curn%3Amcu%3Aendgame%3E%0AWHERE%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Favenger%20schema%3Aname%20%3Fname%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20endgame%3AsurvivedDecimation%20%22true%22%5E%5Exsd%3Aboolean.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D&amp;should-sponge=&amp;format=text%2Fx-html%2Btr&amp;timeout=20000">Which Avengers Survived The Snap (Query Definition)</a></li>
-                                        <li><a href="http://demo.openlinksw.com:8890/sparql?default-graph-uri=&amp;query=PREFIX+endgame%3A+%3C%23%3E%0D%0A%0D%0ASELECT%0D%0A%3Favenger%0D%0A%3Fname+%0D%0AFROM+%3Curn%3Amcu%3Aendgame%3E%0D%0AWHERE%0D%0A++++++++++++%7B%0D%0A+++++++++++++++%3Favenger+schema%3Aname+%3Fname%3B%0D%0A+++++++++++++++endgame%3AsurvivedDecimation+%22true%22%5E%5Exsd%3Aboolean.%0D%0A++++++++++++++%7D&amp;should-sponge=&amp;format=text%2Fx-html%2Btr&amp;timeout=20000">Which Avengers Survived The Snap (Query Result)</a></li>
+                                        <li><a href="http://demo.openlinksw.com:8890/sparql?default-graph-uri=&amp;qtxt=PREFIX%20endgame%3A%20%3C%23%3E%0A%0ASELECT%20DISTINCT%0A%3Fname%20as%20%3Favenger%0A%3Fheist%0A%3Fyear%0A%3FstoneName%20as%20%3Fstone%0A%3Fsuccess%0AFROM%20%3Curn%3Amcu%3Aendgame%3E%0A%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%3FheistURI%20a%20endgame%3AEvent%3B%0A%20%20%20%20%20%20%20schema%3Aname%20%3Fheist%3B%0A%20%20%20%20%20%20%20endgame%3Ayear%20%3Fyear%3B%0A%20%20%20%20%20%20%20endgame%3AheistMembers%20%3Fhero%3B%0A%20%20%20%20%20%20%20endgame%3Atarget%20%3Fstone%3B%0A%20%20%20%20%20%20%20endgame%3AheistSuccess%20%3Fsuccess.%0A%0A%20%20%20%20%20%20%20%3Fhero%20schema%3Aname%20%3Fname.%0A%0A%20%20%20%20%20%20%20%3Fstone%20schema%3Aname%20%3FstoneName%0A%0A%7D&amp;should-sponge=&amp;format=text%2Fhtml&amp;timeout=20000">Query Definition</a></li>
+                                        <li><a href="http://demo.openlinksw.com:8890/sparql?default-graph-uri=&amp;query=PREFIX+endgame%3A+%3C%23%3E%0D%0A%0D%0ASELECT+DISTINCT%0D%0A%3Fname+as+%3Favenger%0D%0A%3Fheist%0D%0A%3Fyear%0D%0A%3FstoneName+as+%3Fstone%0D%0A%3Fsuccess%0D%0AFROM+%3Curn%3Amcu%3Aendgame%3E%0D%0A+++++%7B%0D%0A+++++++%3FheistURI+a+endgame%3AEvent%3B%0D%0A+++++++schema%3Aname+%3Fheist%3B%0D%0A+++++++endgame%3Ayear+%3Fyear%3B%0D%0A+++++++endgame%3AheistMembers+%3Fhero%3B%0D%0A+++++++endgame%3Atarget+%3Fstone%3B%0D%0A+++++++endgame%3AheistSuccess+%3Fsuccess.%0D%0A%0D%0A+++++++%3Fhero+schema%3Aname+%3Fname.%0D%0A%0D%0A+++++++%3Fstone+schema%3Aname+%3FstoneName%0D%0A%0D%0A%7D&amp;should-sponge=&amp;format=text%2Fhtml&amp;timeout=20000">Query Result</a></li>
                                     </ul>
                                 </div>
                             </div>
