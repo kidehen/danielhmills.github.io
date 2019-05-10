@@ -7,24 +7,28 @@ INSERT INTO GRAPH <urn:mcu:endgame> {
 <#ironman>
 a endgame:Avenger;
 schema:name "Iron Man";
+schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/3/35/IronMan-EndgameProfile.jpg/revision/latest/scale-to-width-down/620?cb=20190423175213>;
 schema:memberOf <#theavengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#warmachine>
 a endgame:Avenger;
 schema:name "War Machine";
+schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/7/77/WarMachine-EndgameProfile.jpg/revision/latest?cb=20190423174940>;
 schema:memberOf <#theavengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#nebula>
 a endgame:Avenger;
 schema:name "Nebula";
+schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/0/05/Nebula-EndgameProfile.jpg/revision/latest?cb=20190423175315>;
 schema:memberOf <#theavengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#blackwidow>
 a endgame:Avenger;
 schema:name "Black Widow";
+schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/9/9a/BlackWidow-EndgameProfile.jpg/revision/latest?cb=20190423174842>;
 schema:memberOf <#theavengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
@@ -55,6 +59,7 @@ endgame:survivedDecimation "true"^^xsd:boolean.
 <#thor>
 a endgame:Avenger;
 schema:name "Thor";
+schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/1/13/Thor-EndgameProfile.jpg/revision/latest?cb=20190423174911>;
 schema:memberOf <#theavengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
