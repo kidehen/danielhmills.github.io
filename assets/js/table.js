@@ -43,7 +43,7 @@ $(document).ready( function () {
          "data": "avenger.value",
          "render": function(data, type, row, meta){
             if(type === 'display'){
-                data = '<a href="http://demo.openlinksw.com:8890/fct/rdfdesc/' + row.hero.value + '">' + data + '</a>';
+                data = '<a href="http://demo.openlinksw.com:8890/describe/?url=' + encodeURIComponent(row.hero.value) + '&distinct=1' + '">' + data + '</a>';
             }
 
             return data;
