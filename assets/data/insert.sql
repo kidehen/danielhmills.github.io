@@ -258,6 +258,7 @@ endgame:heistMembers <#thor>,<#rocket>;
 endgame:heistSuccess "true"^^xsd:boolean.
 
 #Locations
+
 <#morag>
 a schema:Place;
 schema:name "Morag";
@@ -267,24 +268,24 @@ schema:schema:filmTimeline <#guardiansofthegalaxy>.
 <#nyc>
 a schema:Place;
 schema:name "New York City";
-schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/8/8a/Morag_1.jpg/revision/latest/scale-to-width-down/619?cb=20140703152342>;
+schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/c/c9/SMFarFromHomeTrailer2.png/revision/latest?cb=20190506140258>;
 schema:filmTimeline <#theavengers-film>.
 
 <#asgard>
 a schema:Place;
 schema:name "Asgard";
-schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/8/8a/Morag_1.jpg/revision/latest/scale-to-width-down/619?cb=20140703152342>;
+schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/2/26/AsgardFull.jpg/revision/latest?cb=20180421164352>;
 schema:filmTimeline <#thorthedarkworld>.
 
 <#campleheigh>
 a schema:Place;
-schema:name "Camp Leheigh";
-schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/8/8a/Morag_1.jpg/revision/latest/scale-to-width-down/619?cb=20140703152342>.
+schema:name "Camp Lehigh";
+schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/1/1c/Camp_Lehigh2.png/revision/latest/scale-to-width-down/620?cb=20150105014102>.
 
 <#vormir>
 a schema:Place;
 schema:name "Vormir";
-schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/8/8a/Morag_1.jpg/revision/latest/scale-to-width-down/619?cb=20140703152342>;
+schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/c/ca/Vormir.png/revision/latest/scale-to-width-down/620?cb=20190329015126>;
 schema:filmTimeline <#infinitywar>.
 
 #Films

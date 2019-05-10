@@ -1,68 +1,122 @@
 {
-
+  
     "data": [
       {
-        "callret-0": {
+        "avenger": {
+          "type": "uri",
+          "value": "#thanos"
+        },
+        "name": {
+          "type": "literal",
+          "value": "Thanos"
+        }
+      },
+      {
+        "avenger": {
+          "type": "uri",
+          "value": "#ironman"
+        },
+        "name": {
           "type": "literal",
           "value": "Iron Man"
         }
       },
       {
-        "callret-0": {
+        "avenger": {
+          "type": "uri",
+          "value": "#warmachine"
+        },
+        "name": {
           "type": "literal",
           "value": "War Machine"
         }
       },
       {
-        "callret-0": {
+        "avenger": {
+          "type": "uri",
+          "value": "#nebula"
+        },
+        "name": {
           "type": "literal",
           "value": "Nebula"
         }
       },
       {
-        "callret-0": {
+        "avenger": {
+          "type": "uri",
+          "value": "#blackwidow"
+        },
+        "name": {
           "type": "literal",
           "value": "Black Widow"
         }
       },
       {
-        "callret-0": {
+        "avenger": {
+          "type": "uri",
+          "value": "#hulk"
+        },
+        "name": {
           "type": "literal",
           "value": "Hulk"
         }
       },
       {
-        "callret-0": {
+        "avenger": {
+          "type": "uri",
+          "value": "#hawkeye"
+        },
+        "name": {
           "type": "literal",
           "value": "Hawkeye"
         }
       },
       {
-        "callret-0": {
+        "avenger": {
+          "type": "uri",
+          "value": "#rocket"
+        },
+        "name": {
           "type": "literal",
           "value": "Rocket"
         }
       },
       {
-        "callret-0": {
+        "avenger": {
+          "type": "uri",
+          "value": "#captainamerica"
+        },
+        "name": {
           "type": "literal",
           "value": "Captain America"
         }
       },
       {
-        "callret-0": {
+        "avenger": {
+          "type": "uri",
+          "value": "#thor"
+        },
+        "name": {
           "type": "literal",
           "value": "Thor"
         }
       },
       {
-        "callret-0": {
+        "avenger": {
+          "type": "uri",
+          "value": "#antman"
+        },
+        "name": {
           "type": "literal",
           "value": "Ant-Man"
         }
       },
       {
-        "callret-0": {
+        "avenger": {
+          "type": "uri",
+          "value": "#captainmarvel"
+        },
+        "name": {
           "type": "literal",
           "value": "Captain Marvel"
         }
