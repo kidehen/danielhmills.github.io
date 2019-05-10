@@ -30,14 +30,14 @@ rdfs:domain foaf:Person;
 rdfs:range xsd:boolean.
 
 endgame:heroes
-a rdf:Property
+a rdf:Property;
 schema:name "heroes";
 schema:description "Identifies superheroes and allies in a battle.";
 rdfs:domain endgame:Battle;
 rdfs:range foaf:Person.
 
 endgame:member
-a rdf:Property
+a rdf:Property;
 schema:name "member";
 schema:description "Creates relation between a person and group";
 rdfs:domain endgame:Character;
