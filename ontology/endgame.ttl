@@ -24,6 +24,7 @@ rdfs:subClassOf schema:Event.
 #Properties
 endgame:survivedDecimation
 a rdf:Property;
+a owl:FunctionalProperty;
 schema:name "survivedDecimation";
 schema:description "Confirms if somebody survived The Decimation";
 rdfs:domain foaf:Person;
@@ -31,6 +32,7 @@ rdfs:range xsd:boolean.
 
 endgame:heroes
 a rdf:Property;
+owl:FunctionalProperty;
 schema:name "heroes";
 schema:description "Identifies superheroes and allies in a battle.";
 rdfs:domain endgame:Battle;
@@ -38,6 +40,7 @@ rdfs:range foaf:Person.
 
 endgame:member
 a rdf:Property;
+owl:FunctionalProperty;
 schema:name "member";
 schema:description "Creates relation between a person and group";
 rdfs:domain endgame:Character;

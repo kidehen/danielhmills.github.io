@@ -31,3 +31,15 @@
     });
 } ); 
 
+
+$(document).ready( function () {
+    $('#myTable4').DataTable({
+    "ajaxSource": "../assets/data/heist.json",
+    "dataSrc": "0.data",
+    "lengthMenu": [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]],
+
+    "columns":[
+        {"data":"hero.value"}    
+    ]
+    });
+} ); 
