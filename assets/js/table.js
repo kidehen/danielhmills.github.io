@@ -36,7 +36,7 @@
 
     "columns":[
 { 
-         "data": "name.value",
+         "data": "heroes.value",
          "render": function(data, type, row, meta){
             if(type === 'display'){
                 data = '<a href="http://demo.openlinksw.com:8890/describe/?url=' + encodeURIComponent(row.heroUri.value) + '&distinct=1' + '">' + data + '</a>';
