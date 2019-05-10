@@ -87,9 +87,9 @@
                         </div>
                         <div class="card">
                             <div class="card-header" role="tab">
-                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-3" href="div#accordion-1 .item-3">Query: Which Avengers Survived The Snap?</a></h5>
+                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="true" aria-controls="accordion-1 .item-3" href="div#accordion-1 .item-3">Query: Which Avengers Survived The Snap?</a></h5>
                             </div>
-                            <div class="collapse item-3" role="tabpanel" data-parent="#accordion-1">
+                            <div class="collapse show item-3" role="tabpanel" data-parent="#accordion-1">
                                 <div class="card-body">
                                     <p class="card-text">PREFIX endgame: &lt;#&gt;<br><br>SELECT <br>?avenger <br>?name&nbsp;<br>FROM &lt;urn:mcu:endgame&gt;<br>WHERE<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;?avenger
                                         schema:name ?name;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;endgame:survivedDecimation "true"^^xsd:boolean.<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p>

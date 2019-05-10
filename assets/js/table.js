@@ -14,7 +14,16 @@
     "lengthMenu": [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]],
 
     "columns":[
-        {"data":"callret-0.value"}    
+         { 
+         "data": "name.value",
+         "render": function(data, type, row, meta){
+            if(type === 'display'){
+                data = '<a href="http://demo.openlinksw.com:8890/describe/?url=' + encodeURIComponent(row.avenger.value) + '&distinct=1' + '">' + data + '</a>';
+            }
+
+            return data;
+         }
+         }   
     ]
     });
 } ); 
