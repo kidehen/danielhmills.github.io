@@ -17,6 +17,10 @@
           "type": "literal",
           "value": "Space Stone Heist #1"
         },
+        "location": {
+          "type": "uri",
+          "value": "#nyc"
+        },
         "year": {
           "type": "literal",
           "value": "2012"
@@ -51,6 +55,10 @@
         "heist": {
           "type": "literal",
           "value": "Space Stone Heist #2"
+        },
+        "location": {
+          "type": "uri",
+          "value": "#camplehigh"
         },
         "year": {
           "type": "literal",
@@ -87,6 +95,10 @@
           "type": "literal",
           "value": "Power Stone Heist"
         },
+        "location": {
+          "type": "uri",
+          "value": "#morag"
+        },
         "year": {
           "type": "literal",
           "value": "2012"
@@ -121,6 +133,10 @@
         "heist": {
           "type": "literal",
           "value": "Power Stone Heist"
+        },
+        "location": {
+          "type": "uri",
+          "value": "#morag"
         },
         "year": {
           "type": "literal",
@@ -157,6 +173,10 @@
           "type": "literal",
           "value": "Soul Stone Heist"
         },
+        "location": {
+          "type": "uri",
+          "value": "#vormir"
+        },
         "year": {
           "type": "literal",
           "value": "2014"
@@ -191,6 +211,10 @@
         "heist": {
           "type": "literal",
           "value": "Time Stone Heist"
+        },
+        "location": {
+          "type": "uri",
+          "value": "#nyc"
         },
         "year": {
           "type": "literal",
@@ -227,6 +251,10 @@
           "type": "literal",
           "value": "Soul Stone Heist"
         },
+        "location": {
+          "type": "uri",
+          "value": "#vormir"
+        },
         "year": {
           "type": "literal",
           "value": "2014"
@@ -261,6 +289,10 @@
         "heist": {
           "type": "literal",
           "value": "Reality Stone Heist"
+        },
+        "location": {
+          "type": "uri",
+          "value": "#asgard"
         },
         "year": {
           "type": "literal",
@@ -297,6 +329,10 @@
           "type": "literal",
           "value": "Mind Stone Heist"
         },
+        "location": {
+          "type": "uri",
+          "value": "#nyc"
+        },
         "year": {
           "type": "literal",
           "value": "2012"
@@ -331,6 +367,10 @@
         "heist": {
           "type": "literal",
           "value": "Space Stone Heist #2"
+        },
+        "location": {
+          "type": "uri",
+          "value": "#camplehigh"
         },
         "year": {
           "type": "literal",
@@ -367,6 +407,10 @@
           "type": "literal",
           "value": "Reality Stone Heist"
         },
+        "location": {
+          "type": "uri",
+          "value": "#asgard"
+        },
         "year": {
           "type": "literal",
           "value": "2013"
@@ -401,6 +445,10 @@
         "heist": {
           "type": "literal",
           "value": "Space Stone Heist #1"
+        },
+        "location": {
+          "type": "uri",
+          "value": "#nyc"
         },
         "year": {
           "type": "literal",
