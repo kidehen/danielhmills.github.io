@@ -39,7 +39,10 @@ $(document).ready( function () {
     "lengthMenu": [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]],
 
     "columns":[
-        {"data":"hero.value"}    
+        {"data":"avenger.value"},
+        {"data":"heist.value"},
+        {"data":"year.value"},
+        {"data":"stone.value"},        {"data":"success.value"},
     ]
     });
 } ); 
