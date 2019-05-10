@@ -265,17 +265,25 @@ endgame:heistSuccess "true"^^xsd:boolean.
 
 #TEMPORARY ONTOLOGY PLACEMENT
 
+#Classes
+
 endgame:Avenger
 a owl:Class;
 schema:name "Avenger";
 schema:description "A member of the Avengers group";
-rdfs:subClassOf foaf:Person.
+rdfs:subClassOf schema:Person.
+
+endgame:Event
+a owl:Class;
+schema:name "Event";
+schema:description "A significant occurrence during the film. ";
+rdfs:subClassOf schema:Event.
 
 endgame:Team
 a owl:Class;
 schema:name "The Avengers";
 schema:description "A team of extraordinary individuals with super powers or other unique chatacteristics.";
-rdfs:subClassOf foaf:Person.
+rdfs:subClassOf schema:Person.
 
 endgame:Battle
 a owl:Class;
@@ -284,26 +292,27 @@ schema:description "An occured fight event between heroes and villans";
 rdfs:subClassOf schema:Event.
 
 #Properties
-
 endgame:survivedDecimation
 a rdf:Property;
+a owl:FunctionalProperty;
 schema:name "survivedDecimation";
 schema:description "Confirms if somebody survived The Decimation";
-rdfs:domain foaf:Person;
+rdfs:domain schema:Person;
 rdfs:range xsd:boolean.
 
 endgame:heroes
 a rdf:Property;
+a owl:FunctionalProperty;
 schema:name "heroes";
 schema:description "Identifies superheroes and allies in a battle.";
 rdfs:domain endgame:Battle;
-rdfs:range foaf:Person.
+rdfs:range schema:Person.
 
 endgame:member
 a rdf:Property;
+a owl:FunctionalProperty;
 schema:name "member";
 schema:description "Creates relation between a person and group";
 rdfs:domain endgame:Character;
 rdfs:range endgame:Team.
-
 };
