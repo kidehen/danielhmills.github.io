@@ -39,7 +39,16 @@ $(document).ready( function () {
     "lengthMenu": [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]],
 
     "columns":[
-        {"data":"avenger.value"},
+        { 
+         "data": "avenger.value",
+         "render": function(data, type, row, meta){
+            if(type === 'display'){
+                data = '<a href="' + data + '">' + data + '</a>';
+            }
+
+            return data;
+         }
+         },
         {"data":"heist.value"},       {"data":"location.value"},
         {"data":"year.value"},
         {"data":"stone.value"},        {"data":"success.value"},
