@@ -1,5 +1,5 @@
-@prefix endgame: <https://danielhmills.github.io/data/ttl/endgame.ttl#>.
-@prefix schema: <http://schema.org/>.
+@prefix endgame: <https://danielhmills.github.io/data/ttl/endgame.ttl#>
+@prefix schema: <https://schema.org/>
 
 #Classes
 
@@ -30,26 +30,66 @@ rdfs:subClassOf schema:Event.
 #Properties
 endgame:survivedDecimation
 a rdf:Property;
-a owl:FunctionalProperty;
+a owl:DatatypeProperty;
 schema:name "survivedDecimation";
 schema:description "Confirms if somebody survived The Decimation";
-rdfs:domain schema:Person;
-rdfs:range xsd:boolean.
+schema:domainIncludes schema:Person;
+schema:rangeIncludes xsd:boolean.
 
 endgame:heroes
 a rdf:Property;
-a owl:FunctionalProperty;
+a owl:ObjectProperty;
 schema:name "heroes";
 schema:description "Identifies superheroes and allies in a battle.";
-rdfs:domain endgame:Battle;
-rdfs:range schema:Person.
+schema:domainIncludes endgame:Battle;
+schema:rangeIncludes schema:Person.
 
 endgame:member
 a rdf:Property;
-a owl:FunctionalProperty;
+a owl:ObjectProperty;
 schema:name "member";
 schema:description "Creates relation between a person and group";
-rdfs:domain endgame:Character;
-rdfs:range endgame:Team.
+schema:domainIncludes endgame:Character;
+schema:rangeIncludes endgame:Team.
 
-#Events
+endgame:heistSuccess
+a rdf:Property;
+a owl:DatatypeProperty;
+schema:name "heistSuccess";
+schema:description "Answers if the Infinity Stone heist was successfull";
+schema:domainIncludes endgame:Event;
+schema:rangeIncludes xsd:Boolean.
+
+endgame:heistMembers
+a rdf:Property;
+a owl:ObjectProperty;
+schema:name "heistMembers";
+schema:description "Answers if the Infinity Stone heist was successfull";
+schema:domainIncludes endgame:Event;
+schema:rangeIncludes schema:Person.
+
+endgame:location
+a rdf:Property;
+a owl:ObjectProperty;
+schema:name "location";
+schema:description "defines a location";
+schema:domainIncludes endgame:Event;
+schema:rangeIncludes schema:Place.
+
+endgame:year
+a rdf:Property;
+a owl:DataTypeProperty;
+schema:name "year";
+schema:description "defines a year";
+schema:domainIncludes endgame:Event;
+schema:rangeIncludes xsd:integer.
+
+endgame:pastFilm
+a rdf:Property;
+a owl:ObjectProperty;
+schema:name "pastFilm";
+schema:description "defines a past film of reference";
+schema:domainIncludes endgame:Event, 
+                      schema:Person, 
+                      endgame:InfinityStone;
+schema:rangeIncludes schema:Movie.
