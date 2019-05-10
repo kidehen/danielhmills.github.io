@@ -41,9 +41,10 @@ $(document).ready( function () {
     "columns":[
         { 
          "data": "avenger.value",
+         "data2": "hero.value",   
          "render": function(data, type, row, meta){
             if(type === 'display'){
-                data = '<a href="http://example.com/' + data + '">' + data + '</a>';
+                data = '<a href="http://example.com/' + data2 + '">' + data + '</a>';
             }
 
             return data;
