@@ -1,5 +1,5 @@
-@prefix endgame: <https://danielhmills.github.io/data/ttl/endgame.ttl#>
-@prefix schema: <https://schema.org/>
+@prefix endgame: <https://danielhmills.github.io/data/ttl/endgame.ttl#>.
+@prefix schema: <https://schema.org/>.
 
 #Classes
 
