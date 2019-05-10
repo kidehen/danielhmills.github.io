@@ -1,9 +1,6 @@
 {
-  
-  "data": {
-    "distinct": false,
-    "ordered": true,
-    "bindings": [
+
+    "data": [
       {
         "hero": {
           "type": "uri",
@@ -425,5 +422,5 @@
         }
       }
     ]
-  }
+  
 }
