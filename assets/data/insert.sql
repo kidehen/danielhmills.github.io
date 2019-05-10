@@ -152,7 +152,40 @@ endgame:villains
 a endgame:InfinityStone;
 schema:name "Power Stone";
 endgame:casedIn <#orb>;
-foaf:depiction <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/d/d7/Power_Stone_VFX.png/revision/latest?cb=20190427012543>.
+schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/d/d7/Power_Stone_VFX.png/revision/latest?cb=20190427012543>.
+
+<#spacestone>
+a endgame:InfinityStone;
+schema:name "Space Stone";
+endgame:casedIn <#tesseract>;
+schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/0/0a/Space_Stone_VFX.png/revision/latest?cb=20190427012702>.
+
+
+<#mindstone>
+a endgame:InfinityStone;
+schema:name "Mind Stone";
+endgame:casedIn <#scepter>;
+schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/e/e4/Mind_Stone_VFX.png/revision/latest?cb=20190427012504>.
+
+<#soulstone>
+a endgame:InfinityStone;
+schema:name "Soul Stone";
+schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/1/17/Soul_Stone_VFX.png/revision/latest?cb=20190427012633>.
+
+<#timestone>
+a endgame:InfinityStone;
+schema:name "Time Stone";
+endgame:casedIn <#eyeofagomotto>;
+schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/f/f0/Time_Stone_VFX.png/revision/latest?cb=20190427012724>.
+
+<#realitystone>
+a endgame:InfinityStone;
+schema:name "Reality Stone";
+endgame:casedIn <#ather>;
+schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/9/9b/Reality_Stone_VFX.png/revision/latest?cb=20190427012609>.
+
+
+#Heists
 
 <#powerstoneheist>
 a endgame:Event;
@@ -163,14 +196,6 @@ endgame:pastFilm <#guardiansofthegalaxy>;
 endgame:target <#powerstone>;
 endgame:heistMembers <#nebula>, <#warmachine>;
 endgame:heistSuccess "true"^^xsd:boolean.
-
-
-<#spacestone>
-a endgame:InfinityStone;
-schema:name "Space Stone";
-endgame:casedIn <#tesseract>;
-foaf:depiction <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/0/0a/Space_Stone_VFX.png/revision/latest?cb=20190427012702>.
-
 
 <#spacestoneheist-1>
 a endgame:Event;
@@ -192,14 +217,6 @@ endgame:pastFilm <#theavengers-film>;
 endgame:heistMembers <#ironman>, <#captainamerica>;
 endgame:heistSuccess "true"^^xsd:boolean.
 
-
-<#mindstone>
-a endgame:InfinityStone;
-schema:name "Mind Stone";
-endgame:casedIn <#scepter>;
-foaf:depiction <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/e/e4/Mind_Stone_VFX.png/revision/latest?cb=20190427012504>.
-
-
 <#mindstoneheist>
 a endgame:Event;
 schema:name "Mind Stone Heist";
@@ -209,13 +226,6 @@ endgame:pastFilm <#theavengers-film>;
 endgame:target <#mindstone>;
 endgame:heistMembers <#captainamerica>;
 endgame:heistSuccess "true"^^xsd:boolean.
-
-
-<#soulstone>
-a endgame:InfinityStone;
-schema:name "Soul Stone";
-foaf:depiction <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/1/17/Soul_Stone_VFX.png/revision/latest?cb=20190427012633>.
-
 
 <#soulstoneheist>
 a endgame:Event;
@@ -227,14 +237,6 @@ endgame:target <#soulstone>;
 endgame:heistMembers <#hawkeye>,<#blackwidow>;
 endgame:heistSuccess "true"^^xsd:boolean.
 
-
-<#timestone>
-a endgame:InfinityStone;
-schema:name "Time Stone";
-endgame:casedIn <#eyeofagomotto>;
-foaf:depiction <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/f/f0/Time_Stone_VFX.png/revision/latest?cb=20190427012724>.
-
-
 <#timestoneheist>
 a endgame:Event;
 schema:name "Time Stone Heist";
@@ -245,14 +247,6 @@ endgame:target <#timestone>;
 endgame:heistMembers <#hulk>;
 endgame:heistSuccess "true"^^xsd:boolean.
 
-
-<#realitystone>
-a endgame:InfinityStone;
-schema:name "Reality Stone";
-endgame:casedIn <#ather>;
-foaf:depiction <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/9/9b/Reality_Stone_VFX.png/revision/latest?cb=20190427012609>.
-
-
 <#realitystoneheist>
 a endgame:Event;
 schema:name "Reality Stone Heist";
@@ -262,6 +256,42 @@ endgame:pastFilm <#thorthedarkworld>;
 endgame:target <#realitystone>;
 endgame:heistMembers <#thor>,<#rocket>;
 endgame:heistSuccess "true"^^xsd:boolean.
+
+#Locations
+<#morag>
+a schema:Place;
+schema:name "Morag";
+schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/8/8a/Morag_1.jpg/revision/latest/scale-to-width-down/619?cb=20140703152342>;
+schema:schema:filmTimeline <#guardiansofthegalaxy>.
+
+<#nyc>
+a schema:Place;
+schema:name "New York City";
+schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/8/8a/Morag_1.jpg/revision/latest/scale-to-width-down/619?cb=20140703152342>;
+schema:filmTimeline <#theavengers-film>.
+
+<#asgard>
+a schema:Place;
+schema:name "Asgard";
+schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/8/8a/Morag_1.jpg/revision/latest/scale-to-width-down/619?cb=20140703152342>;
+schema:filmTimeline <#thorthedarkworld>.
+
+<#campleheigh>
+a schema:Place;
+schema:name "Camp Leheigh";
+schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/8/8a/Morag_1.jpg/revision/latest/scale-to-width-down/619?cb=20140703152342>.
+
+<#vormir>
+a schema:Place;
+schema:name "Vormir";
+schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/8/8a/Morag_1.jpg/revision/latest/scale-to-width-down/619?cb=20140703152342>;
+schema:filmTimeline <#infinitywar>.
+
+#Films
+<#infinitywar>
+a schema:Film;
+schema:name "Avengers: Infinity War";
+owl:sameAs <http://dbpedia.org/resource/Avengers:_Infinity_War>.
 
 #TEMPORARY ONTOLOGY PLACEMENT
 
@@ -294,25 +324,67 @@ rdfs:subClassOf schema:Event.
 #Properties
 endgame:survivedDecimation
 a rdf:Property;
-a owl:FunctionalProperty;
+a owl:DatatypeProperty;
 schema:name "survivedDecimation";
 schema:description "Confirms if somebody survived The Decimation";
-rdfs:domain schema:Person;
-rdfs:range xsd:boolean.
+schema:domainIncludes schema:Person;
+schema:rangeIncludes xsd:boolean.
 
 endgame:heroes
 a rdf:Property;
-a owl:FunctionalProperty;
+a owl:ObjectProperty;
 schema:name "heroes";
 schema:description "Identifies superheroes and allies in a battle.";
-rdfs:domain endgame:Battle;
-rdfs:range schema:Person.
+schema:domainIncludes endgame:Battle;
+schema:rangeIncludes schema:Person.
 
 endgame:member
 a rdf:Property;
-a owl:FunctionalProperty;
+a owl:ObjectProperty;
 schema:name "member";
 schema:description "Creates relation between a person and group";
-rdfs:domain endgame:Character;
-rdfs:range endgame:Team.
+schema:domainIncludes endgame:Character;
+schema:rangeIncludes endgame:Team.
+
+endgame:heistSuccess
+a rdf:Property;
+a owl:DatatypeProperty;
+schema:name "heistSuccess";
+schema:description "Answers if the Infinity Stone heist was successfull";
+schema:domainIncludes endgame:Event;
+schema:rangeIncludes xsd:Boolean.
+
+endgame:heistMembers
+a rdf:Property;
+a owl:ObjectProperty;
+schema:name "heistMembers";
+schema:description "Answers if the Infinity Stone heist was successfull";
+schema:domainIncludes endgame:Event;
+schema:rangeIncludes schema:Person.
+
+endgame:location
+a rdf:Property;
+a owl:ObjectProperty;
+schema:name "location";
+schema:description "defines a location";
+schema:domainIncludes endgame:Event;
+schema:rangeIncludes schema:Place.
+
+endgame:year
+a rdf:Property;
+a owl:DataTypeProperty;
+schema:name "year";
+schema:description "defines a year";
+schema:domainIncludes endgame:Event;
+schema:rangeIncludes xsd:integer.
+
+endgame:pastFilm
+a rdf:Property;
+a owl:ObjectProperty;
+schema:name "pastFilm";
+schema:description "defines a past film of reference";
+schema:domainIncludes endgame:Event, 
+                      schema:Person, 
+                      endgame:InfinityStone;
+schema:rangeIncludes schema:Movie.
 };
