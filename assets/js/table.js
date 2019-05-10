@@ -41,7 +41,7 @@ $(document).ready( function () {
     "columns":[
         {"data":"avenger.value"},
         {"data":"heist.value"},
-        {"data":"year.value"},
+        {"data":"location.value"},        {"data":"year.value"},
         {"data":"stone.value"},        {"data":"success.value"},
     ]
     });
