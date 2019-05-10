@@ -43,7 +43,7 @@ $(document).ready( function () {
          "data": "avenger.value",
          "render": function(data, type, row, meta){
             if(type === 'display'){
-                data = '<a href="http://test.com/' + row.hero.value + '">' + data + '</a>';
+                data = '<a href="http://test.com/' + data + '">' + data + '</a>';
             }
 
             return data;
