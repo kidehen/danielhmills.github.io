@@ -209,11 +209,13 @@
                     <div role="tablist" id="accordion-1">
                         <div class="card">
                             <div class="card-header" role="tab">
-                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-1" href="div#accordion-1 .item-1">Query: Which stone heist did each Avenger take part in? Which year did they visit? Which timeline did it take place in? Was the heist successful?&nbsp;</a></h5>
+                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="true" aria-controls="accordion-1 .item-1" href="div#accordion-1 .item-1">Query: Which stone heist did each Avenger take part in? Which year did they visit? Which timeline did it take place in? Was the heist successful?&nbsp;</a></h5>
                             </div>
-                            <div class="collapse item-1" role="tabpanel" data-parent="#accordion-1">
+                            <div class="collapse show item-1" role="tabpanel" data-parent="#accordion-1">
                                 <div class="card-body">
-                                    <p class="card-text">PREFIX endgame: &lt;#&gt;<br><br>SELECT DISTINCT <br>?heroes<br>FROM <br>{<br>?s a endgame:Avenger;<br>schema:name ?heroes;<br>endgame:survivedDecimation "true"^^xsd:boolean;<br>^endgame:heroes endgame:ThanosFight1.<br>}<br><br></p>
+                                    <p class="card-text">PREFIX endgame: &lt;#&gt;<br><br>SELECT DISTINCT<br>?name as ?avenger<br>?heist<br>?year<br>?stoneName as ?stone<br>?success<br>FROM &lt;urn:mcu:endgame&gt;<br>&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp; ?heistURI a endgame:Event;<br>&nbsp;&nbsp;&nbsp;
+                                        schema:name ?heist;<br>&nbsp;&nbsp;&nbsp; endgame:year ?year;<br>&nbsp;&nbsp;&nbsp; endgame:heistMembers ?hero;<br>&nbsp;&nbsp;&nbsp; endgame:target ?stone;<br>&nbsp;&nbsp;&nbsp; endgame:heistSuccess ?success.<br><br>&nbsp;&nbsp;&nbsp;
+                                        ?hero schema:name ?name.<br><br>&nbsp;&nbsp;&nbsp; ?stone schema:name ?stoneName<br><br>}<br></p>
                                 </div>
                             </div>
                         </div>
@@ -229,9 +231,9 @@
                         </div>
                         <div class="card">
                             <div class="card-header" role="tab">
-                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="true" aria-controls="accordion-1 .item-3" href="div#accordion-1 .item-3">(Optional): Live Result Demonstrations</a></h5>
+                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-3" href="div#accordion-1 .item-3">(Optional): Live Result Demonstrations</a></h5>
                             </div>
-                            <div class="collapse show item-3" role="tabpanel" data-parent="#accordion-1">
+                            <div class="collapse item-3" role="tabpanel" data-parent="#accordion-1">
                                 <div class="card-body">
                                     <ul>
                                         <li><a href="http://demo.openlinksw.com:8890/sparql?default-graph-uri=&amp;qtxt=PREFIX%20endgame%3A%20%3C%23%3E%0A%0ASELECT%20DISTINCT%0A%3Fname%20as%20%3Favenger%0A%3Fheist%0A%3Fyear%0A%3FstoneName%20as%20%3Fstone%0A%3Fsuccess%0AFROM%20%3Curn%3Amcu%3Aendgame%3E%0A%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%3FheistURI%20a%20endgame%3AEvent%3B%0A%20%20%20%20%20%20%20schema%3Aname%20%3Fheist%3B%0A%20%20%20%20%20%20%20endgame%3Ayear%20%3Fyear%3B%0A%20%20%20%20%20%20%20endgame%3AheistMembers%20%3Fhero%3B%0A%20%20%20%20%20%20%20endgame%3Atarget%20%3Fstone%3B%0A%20%20%20%20%20%20%20endgame%3AheistSuccess%20%3Fsuccess.%0A%0A%20%20%20%20%20%20%20%3Fhero%20schema%3Aname%20%3Fname.%0A%0A%20%20%20%20%20%20%20%3Fstone%20schema%3Aname%20%3FstoneName%0A%0A%7D&amp;should-sponge=&amp;format=text%2Fhtml&amp;timeout=20000">Query Definition</a></li>
