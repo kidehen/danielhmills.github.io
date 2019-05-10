@@ -1,43 +1,71 @@
-{ 
+{
     "data": [
       {
-        "name": {
+        "heroUri": {
+          "type": "uri",
+          "value": "#warmachine"
+        },
+        "heroes": {
           "type": "literal",
           "value": "War Machine"
         }
       },
       {
-        "name": {
+        "heroUri": {
+          "type": "uri",
+          "value": "#nebula"
+        },
+        "heroes": {
           "type": "literal",
           "value": "Nebula"
         }
       },
       {
-        "name": {
+        "heroUri": {
+          "type": "uri",
+          "value": "#blackwidow"
+        },
+        "heroes": {
           "type": "literal",
           "value": "Black Widow"
         }
       },
       {
-        "name": {
+        "heroUri": {
+          "type": "uri",
+          "value": "#rocket"
+        },
+        "heroes": {
           "type": "literal",
           "value": "Rocket"
         }
       },
       {
-        "name": {
+        "heroUri": {
+          "type": "uri",
+          "value": "#captainamerica"
+        },
+        "heroes": {
           "type": "literal",
           "value": "Captain America"
         }
       },
       {
-        "name": {
+        "heroUri": {
+          "type": "uri",
+          "value": "#thor"
+        },
+        "heroes": {
           "type": "literal",
           "value": "Thor"
         }
       },
       {
-        "name": {
+        "heroUri": {
+          "type": "uri",
+          "value": "#captainmarvel"
+        },
+        "heroes": {
           "type": "literal",
           "value": "Captain Marvel"
         }
