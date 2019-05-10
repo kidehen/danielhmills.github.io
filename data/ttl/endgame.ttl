@@ -2,7 +2,6 @@
 @prefix schema: <https://schema.org/>
 
 #Classes
-
 endgame:Avenger
 a owl:Class;
 schema:name "Avenger";
@@ -22,6 +21,7 @@ schema:description "An occured fight event between heroes and villans";
 rdfs:subClassOf schema:Event.
 
 #Properties
+
 endgame:survivedDecimation
 a rdf:Property;
 schema:name "survivedDecimation";
@@ -30,17 +30,18 @@ rdfs:domain foaf:Person;
 rdfs:range xsd:boolean.
 
 endgame:heroes
-a rdf:Property
+a rdf:Property;
 schema:name "heroes";
 schema:description "Identifies superheroes and allies in a battle.";
 rdfs:domain endgame:Battle;
 rdfs:range foaf:Person.
 
 endgame:member
-a rdf:Property
+a rdf:Property;
 schema:name "member";
 schema:description "Creates relation between a person and group";
 rdfs:domain endgame:Character;
 rdfs:range endgame:Team.
+
 
 #Events

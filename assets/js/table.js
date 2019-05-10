@@ -49,7 +49,16 @@ $(document).ready( function () {
             return data;
          }
          },
-        {"data":"heist.value"},       {"data":"location.value"},
+       { 
+         "data": "heist.value",
+         "render": function(data, type, row, meta){
+            if(type === 'display'){
+                data = '<a href="http://demo.openlinksw.com:8890/describe/?url=' + encodeURIComponent(row.heistURI.value) + '&distinct=1' + '">' + data + '</a>';
+            }
+
+            return data;
+         }
+         }, {"data":"location.value"},
         {"data":"year.value"},
         {"data":"stone.value"},        {"data":"success.value"},
     ]

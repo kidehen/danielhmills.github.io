@@ -1,59 +1,73 @@
-PREFIX endgame: <#>
+SPARQL
 CLEAR GRAPH <urn:mcu:endgame>;
+
+SPARQL
+PREFIX endgame: <#>
 INSERT INTO GRAPH <urn:mcu:endgame> {
 <#ironman>
 a endgame:Avenger;
 schema:name "Iron Man";
+schema:memberOf <#theavengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#warmachine>
 a endgame:Avenger;
 schema:name "War Machine";
+schema:memberOf <#theavengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#nebula>
 a endgame:Avenger;
 schema:name "Nebula";
+schema:memberOf <#theavengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#blackwidow>
 a endgame:Avenger;
 schema:name "Black Widow";
+schema:memberOf <#theavengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#hulk>
 a endgame:Avenger;
 schema:name "Hulk";
+schema:memberOf <#theavengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#hawkeye>
 a endgame:Avenger;
 schema:name "Hawkeye";
+schema:memberOf <#theavengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#rocket>
 a endgame:Avenger;
 schema:name "Rocket";
+schema:memberOf <#theavengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#captainamerica>
 a endgame:Avenger;
 schema:name "Captain America";
+schema:memberOf <#theavengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#thor>
 a endgame:Avenger;
 schema:name "Thor";
+schema:memberOf <#theavengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#antman>
 a endgame:Avenger;
 schema:name "Ant-Man";
+schema:memberOf <#theavengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#captainmarvel>
 a endgame:Avenger;
 schema:name "Captain Marvel";
+schema:memberOf <#theavengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#bucky>
@@ -69,6 +83,7 @@ endgame:survivedDecimation "false"^^xsd:boolean.
 <#falcon>
 a endgame:Avenger;
 schema:name "Falcon";
+schema:memberOf <#theavengers>;
 endgame:survivedDecimation "false"^^xsd:boolean.
 
 <#scarletwitch>
@@ -119,6 +134,7 @@ endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#ThanosFight1>
 a endgame:Battle;
+schema:name "Fight With Thanos (Post Snap)";
 endgame:heroes <#captainmarvel>,
                <#captainamerica>,
                <#thor>,
@@ -247,5 +263,47 @@ endgame:target <#realitystone>;
 endgame:heistMembers <#thor>,<#rocket>;
 endgame:heistSuccess "true"^^xsd:boolean.
 
+#TEMPORARY ONTOLOGY PLACEMENT
 
-}
+endgame:Avenger
+a owl:Class;
+schema:name "Avenger";
+schema:description "A member of the Avengers group";
+rdfs:subClassOf foaf:Person.
+
+endgame:Team
+a owl:Class;
+schema:name "The Avengers";
+schema:description "A team of extraordinary individuals with super powers or other unique chatacteristics.";
+rdfs:subClassOf foaf:Person.
+
+endgame:Battle
+a owl:Class;
+schema:name "Battle";
+schema:description "An occured fight event between heroes and villans";
+rdfs:subClassOf schema:Event.
+
+#Properties
+
+endgame:survivedDecimation
+a rdf:Property;
+schema:name "survivedDecimation";
+schema:description "Confirms if somebody survived The Decimation";
+rdfs:domain foaf:Person;
+rdfs:range xsd:boolean.
+
+endgame:heroes
+a rdf:Property;
+schema:name "heroes";
+schema:description "Identifies superheroes and allies in a battle.";
+rdfs:domain endgame:Battle;
+rdfs:range foaf:Person.
+
+endgame:member
+a rdf:Property;
+schema:name "member";
+schema:description "Creates relation between a person and group";
+rdfs:domain endgame:Character;
+rdfs:range endgame:Team.
+
+};
