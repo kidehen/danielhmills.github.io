@@ -5,133 +5,111 @@ SPARQL
 PREFIX endgame: <#>
 INSERT INTO GRAPH <urn:mcu:endgame> {
 <#ironman>
-a endgame:Avenger;
 schema:name "Iron Man";
 schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/3/35/IronMan-EndgameProfile.jpg/revision/latest/scale-to-width-down/620?cb=20190423175213>;
 schema:memberOf <#theavengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#warmachine>
-a endgame:Avenger;
 schema:name "War Machine";
 schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/7/77/WarMachine-EndgameProfile.jpg/revision/latest?cb=20190423174940>;
 schema:memberOf <#theavengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#nebula>
-a endgame:Avenger;
 schema:name "Nebula";
 schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/0/05/Nebula-EndgameProfile.jpg/revision/latest?cb=20190423175315>;
 schema:memberOf <#theavengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#blackwidow>
-a endgame:Avenger;
 schema:name "Black Widow";
 schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/9/9a/BlackWidow-EndgameProfile.jpg/revision/latest?cb=20190423174842>;
 schema:memberOf <#theavengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#hulk>
-a endgame:Avenger;
 schema:name "Hulk";
 schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/a/a4/ProfHulkAvengersEndgamelicensingart001.jpg/revision/latest?cb=20190506122658>;
 schema:memberOf <#theavengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#hawkeye>
-a endgame:Avenger;
 schema:name "Hawkeye";
 schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/0/08/HawkeyeRonin-EndgameProfile.jpg/revision/latest/scale-to-width-down/620?cb=20190423175147>;
 schema:memberOf <#theavengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#rocket>
-a endgame:Avenger;
 schema:name "Rocket";
 schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/3/34/Rocket-EndgameProfile.jpg/revision/latest/scale-to-width-down/620?cb=20190423175032>;
 schema:memberOf <#theavengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#captainamerica>
-a endgame:Avenger;
 schema:name "Captain America";
 schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/d/d7/CapAmerica-EndgameProfile.jpg/revision/latest?cb=20190423175339>;
 schema:memberOf <#theavengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#thor>
-a endgame:Avenger;
 schema:name "Thor";
 schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/1/13/Thor-EndgameProfile.jpg/revision/latest?cb=20190423174911>;
 schema:memberOf <#theavengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#antman>
-a endgame:Avenger;
 schema:name "Ant-Man";
 schema:memberOf <#theavengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#captainmarvel>
-a endgame:Avenger;
 schema:name "Captain Marvel";
 schema:memberOf <#theavengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#bucky>
-a endgame:Avenger;
 schema:name "Bucky";
 endgame:survivedDecimation "false"^^xsd:boolean.
 
 <#blackpanther>
-a endgame:Avenger;
 schema:name "Black Panther";
 endgame:survivedDecimation "false"^^xsd:boolean.
 
 <#falcon>
-a endgame:Avenger;
 schema:name "Falcon";
 schema:memberOf <#theavengers>;
 endgame:survivedDecimation "false"^^xsd:boolean.
 
 <#scarletwitch>
-a endgame:Avenger;
 schema:name "Scarlet Witch";
 endgame:survivedDecimation "false"^^xsd:boolean.
 
 <#starlord>
-a endgame:Avenger;
 schema:name "Starlord";
 endgame:survivedDecimation "false"^^xsd:boolean.
 
 <#mantis>
-a endgame:Avenger;
 schema:name "Mantis";
 endgame:survivedDecimation "false"^^xsd:boolean.
 
 <#drax>
-a endgame:Avenger;
 schema:name "Drax";
 endgame:survivedDecimation "false"^^xsd:boolean.
 
 <#drstrange>
-a endgame:Avenger;
 schema:name "Doctor Strange";
 endgame:survivedDecimation "false"^^xsd:boolean.
 
 <#thewasp>
-a endgame:Avenger;
 schema:name "The Wasp";
 endgame:survivedDecimation "false"^^xsd:boolean.
 
 <#hankpym>
-a endgame:Avenger;
 schema:name "Hank Pym";
 endgame:survivedDecimation "false"^^xsd:boolean.
 
 <#janetvandyne>
-a endgame:Avenger;
 schema:name "Janet van Dyne";
 endgame:survivedDecimation "false"^^xsd:boolean.
 
