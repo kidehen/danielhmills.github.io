@@ -51,7 +51,7 @@
                 <div class="col-md-12" style="padding-bottom: 45px;padding-top: 45px;">
                     <h3>Part 1: Who survived?</h3>
                     <p class="visible">The movie starts with the dusting of Hawkeye's family, in addiiton to Iron Man and Nebula returning to Earth, with assistance from Captain Marvel. As Thanos's actions are explained to the group, we learn more about the Avengers who
-                        are currently dusted or unnacounted for.</p><img src="../assets/img/endgame-survivors.png">
+                        are currently dusted or unnacounted for.</p>
                     <p><strong>We begin by adding some data about the post-Decimation status of key characters:</strong></p>
                     <div role="tablist" id="accordion-1">
                         <div class="card" style="background-color: rgb(255,255,255);">
@@ -86,11 +86,14 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <p>In order to find the characters who survived the snap, we will be querying for relations in the inserted dataset, that signify post-snap survival status.</p><img src="../assets/img/endgame-survivors.png">
+                    <div role="tablist" id="accordion-1">
                         <div class="card">
                             <div class="card-header" role="tab">
-                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-3" href="div#accordion-1 .item-3">Query: Which Avengers Survived The Snap?</a></h5>
+                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-1" href="div#accordion-1 .item-1">Query: Which Avengers Survived The Snap?</a></h5>
                             </div>
-                            <div class="collapse item-3" role="tabpanel" data-parent="#accordion-1">
+                            <div class="collapse item-1" role="tabpanel" data-parent="#accordion-1">
                                 <div class="card-body">
                                     <p class="card-text">PREFIX endgame: &lt;#&gt;<br><br>SELECT <br>?avenger <br>?name&nbsp;<br>FROM &lt;urn:mcu:endgame&gt;<br>WHERE<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;?avenger
                                         schema:name ?name;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;endgame:survivedDecimation "true"^^xsd:boolean.<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p>
@@ -99,9 +102,9 @@
                         </div>
                         <div class="card">
                             <div class="card-header" role="tab">
-                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-4" href="div#accordion-1 .item-4">Query: Which Avengers Survived The Snap? (Result)</a></h5>
+                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-2" href="div#accordion-1 .item-2">Query: Which Avengers Survived The Snap? (Result)</a></h5>
                             </div>
-                            <div class="collapse item-4" role="tabpanel" data-parent="#accordion-1">
+                            <div class="collapse item-2" role="tabpanel" data-parent="#accordion-1">
                                 <div class="card-body">
                                     <p class="card-text"><br>avenger &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; name<br>LONG VARCHAR &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -125,9 +128,9 @@
                         </div>
                         <div class="card">
                             <div class="card-header" role="tab">
-                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-5" href="div#accordion-1 .item-5">(Optional): Live Result Demonstrations</a></h5>
+                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-3" href="div#accordion-1 .item-3">(Optional): Live Result Demonstrations</a></h5>
                             </div>
-                            <div class="collapse item-5" role="tabpanel" data-parent="#accordion-1">
+                            <div class="collapse item-3" role="tabpanel" data-parent="#accordion-1">
                                 <div class="card-body">
                                     <ul>
                                         <li><a href="http://demo.openlinksw.com:8890/sparql?default-graph-uri=&amp;qtxt=PREFIX%20endgame%3A%20%3C%23%3E%0A%0ASELECT%0A%3Favenger%0A%3Fname%20%0AFROM%20%3Curn%3Amcu%3Aendgame%3E%0AWHERE%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Favenger%20schema%3Aname%20%3Fname%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20endgame%3AsurvivedDecimation%20%22true%22%5E%5Exsd%3Aboolean.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D&amp;should-sponge=&amp;format=text%2Fx-html%2Btr&amp;timeout=20000">Which Avengers Survived The Snap (Query Definition)</a></li>
