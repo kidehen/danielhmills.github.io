@@ -35,24 +35,28 @@ endgame:survivedDecimation "true"^^xsd:boolean.
 <#hulk>
 a endgame:Avenger;
 schema:name "Hulk";
+schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/a/a4/ProfHulkAvengersEndgamelicensingart001.jpg/revision/latest?cb=20190506122658>;
 schema:memberOf <#theavengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#hawkeye>
 a endgame:Avenger;
 schema:name "Hawkeye";
+schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/0/08/HawkeyeRonin-EndgameProfile.jpg/revision/latest/scale-to-width-down/620?cb=20190423175147>;
 schema:memberOf <#theavengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#rocket>
 a endgame:Avenger;
 schema:name "Rocket";
+schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/3/34/Rocket-EndgameProfile.jpg/revision/latest/scale-to-width-down/620?cb=20190423175032>;
 schema:memberOf <#theavengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#captainamerica>
 a endgame:Avenger;
 schema:name "Captain America";
+schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/d/d7/CapAmerica-EndgameProfile.jpg/revision/latest?cb=20190423175339>;
 schema:memberOf <#theavengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 

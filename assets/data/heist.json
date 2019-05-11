@@ -3,74 +3,39 @@
       {
         "hero": {
           "type": "uri",
-          "value": "#ironman"
+          "value": "#captainamerica"
         },
         "avenger": {
           "type": "literal",
-          "value": "Iron Man"
+          "value": "Captain America"
         },
         "heistURI": {
           "type": "uri",
-          "value": "#spacestoneheist-1"
+          "value": "#mindstoneheist"
         },
         "heist": {
           "type": "literal",
-          "value": "Space Stone Heist #1"
-        },
-        "location": {
-          "type": "uri",
-          "value": "#nyc"
+          "value": "Mind Stone Heist"
         },
         "year": {
           "type": "literal",
           "value": "2012"
         },
-        "stoneUri": {
+        "stoneURI": {
           "type": "uri",
-          "value": "#spacestone"
+          "value": "#mindstone"
         },
-        "stone": {
+        "stoneName": {
           "type": "literal",
-          "value": "Space Stone"
+          "value": "Mind Stone"
         },
-        "success": {
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
-          "value": "0"
-        }
-      },
-      {
-        "hero": {
+        "locationURI": {
           "type": "uri",
-          "value": "#ironman"
-        },
-        "avenger": {
-          "type": "literal",
-          "value": "Iron Man"
-        },
-        "heistURI": {
-          "type": "uri",
-          "value": "#spacestoneheist-2"
-        },
-        "heist": {
-          "type": "literal",
-          "value": "Space Stone Heist #2"
+          "value": "#nyc"
         },
         "location": {
-          "type": "uri",
-          "value": "#camplehigh"
-        },
-        "year": {
           "type": "literal",
-          "value": "1970"
-        },
-        "stoneUri": {
-          "type": "uri",
-          "value": "#spacestone"
-        },
-        "stone": {
-          "type": "literal",
-          "value": "Space Stone"
+          "value": "New York City"
         },
         "success": {
           "type": "typed-literal",
@@ -95,21 +60,25 @@
           "type": "literal",
           "value": "Power Stone Heist"
         },
-        "location": {
-          "type": "uri",
-          "value": "#morag"
-        },
         "year": {
           "type": "literal",
           "value": "2012"
         },
-        "stoneUri": {
+        "stoneURI": {
           "type": "uri",
           "value": "#powerstone"
         },
-        "stone": {
+        "stoneName": {
           "type": "literal",
           "value": "Power Stone"
+        },
+        "locationURI": {
+          "type": "uri",
+          "value": "#morag"
+        },
+        "location": {
+          "type": "literal",
+          "value": "Morag"
         },
         "success": {
           "type": "typed-literal",
@@ -134,138 +103,25 @@
           "type": "literal",
           "value": "Power Stone Heist"
         },
-        "location": {
-          "type": "uri",
-          "value": "#morag"
-        },
         "year": {
           "type": "literal",
           "value": "2012"
         },
-        "stoneUri": {
+        "stoneURI": {
           "type": "uri",
           "value": "#powerstone"
         },
-        "stone": {
+        "stoneName": {
           "type": "literal",
           "value": "Power Stone"
         },
-        "success": {
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
-          "value": "1"
-        }
-      },
-      {
-        "hero": {
+        "locationURI": {
           "type": "uri",
-          "value": "#blackwidow"
-        },
-        "avenger": {
-          "type": "literal",
-          "value": "Black Widow"
-        },
-        "heistURI": {
-          "type": "uri",
-          "value": "#soulstoneheist"
-        },
-        "heist": {
-          "type": "literal",
-          "value": "Soul Stone Heist"
+          "value": "#morag"
         },
         "location": {
-          "type": "uri",
-          "value": "#vormir"
-        },
-        "year": {
           "type": "literal",
-          "value": "2014"
-        },
-        "stoneUri": {
-          "type": "uri",
-          "value": "#soulstone"
-        },
-        "stone": {
-          "type": "literal",
-          "value": "Soul Stone"
-        },
-        "success": {
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
-          "value": "1"
-        }
-      },
-      {
-        "hero": {
-          "type": "uri",
-          "value": "#hulk"
-        },
-        "avenger": {
-          "type": "literal",
-          "value": "Hulk"
-        },
-        "heistURI": {
-          "type": "uri",
-          "value": "#timestoneheist"
-        },
-        "heist": {
-          "type": "literal",
-          "value": "Time Stone Heist"
-        },
-        "location": {
-          "type": "uri",
-          "value": "#nyc"
-        },
-        "year": {
-          "type": "literal",
-          "value": "2012"
-        },
-        "stoneUri": {
-          "type": "uri",
-          "value": "#timestone"
-        },
-        "stone": {
-          "type": "literal",
-          "value": "Time Stone"
-        },
-        "success": {
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
-          "value": "1"
-        }
-      },
-      {
-        "hero": {
-          "type": "uri",
-          "value": "#hawkeye"
-        },
-        "avenger": {
-          "type": "literal",
-          "value": "Hawkeye"
-        },
-        "heistURI": {
-          "type": "uri",
-          "value": "#soulstoneheist"
-        },
-        "heist": {
-          "type": "literal",
-          "value": "Soul Stone Heist"
-        },
-        "location": {
-          "type": "uri",
-          "value": "#vormir"
-        },
-        "year": {
-          "type": "literal",
-          "value": "2014"
-        },
-        "stoneUri": {
-          "type": "uri",
-          "value": "#soulstone"
-        },
-        "stone": {
-          "type": "literal",
-          "value": "Soul Stone"
+          "value": "Morag"
         },
         "success": {
           "type": "typed-literal",
@@ -290,99 +146,25 @@
           "type": "literal",
           "value": "Reality Stone Heist"
         },
-        "location": {
-          "type": "uri",
-          "value": "#asgard"
-        },
         "year": {
           "type": "literal",
           "value": "2013"
         },
-        "stoneUri": {
+        "stoneURI": {
           "type": "uri",
           "value": "#realitystone"
         },
-        "stone": {
+        "stoneName": {
           "type": "literal",
           "value": "Reality Stone"
         },
-        "success": {
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
-          "value": "1"
-        }
-      },
-      {
-        "hero": {
+        "locationURI": {
           "type": "uri",
-          "value": "#captainamerica"
-        },
-        "avenger": {
-          "type": "literal",
-          "value": "Captain America"
-        },
-        "heistURI": {
-          "type": "uri",
-          "value": "#mindstoneheist"
-        },
-        "heist": {
-          "type": "literal",
-          "value": "Mind Stone Heist"
+          "value": "#asgard"
         },
         "location": {
-          "type": "uri",
-          "value": "#nyc"
-        },
-        "year": {
           "type": "literal",
-          "value": "2012"
-        },
-        "stoneUri": {
-          "type": "uri",
-          "value": "#mindstone"
-        },
-        "stone": {
-          "type": "literal",
-          "value": "Mind Stone"
-        },
-        "success": {
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
-          "value": "1"
-        }
-      },
-      {
-        "hero": {
-          "type": "uri",
-          "value": "#captainamerica"
-        },
-        "avenger": {
-          "type": "literal",
-          "value": "Captain America"
-        },
-        "heistURI": {
-          "type": "uri",
-          "value": "#spacestoneheist-2"
-        },
-        "heist": {
-          "type": "literal",
-          "value": "Space Stone Heist #2"
-        },
-        "location": {
-          "type": "uri",
-          "value": "#camplehigh"
-        },
-        "year": {
-          "type": "literal",
-          "value": "1970"
-        },
-        "stoneUri": {
-          "type": "uri",
-          "value": "#spacestone"
-        },
-        "stone": {
-          "type": "literal",
-          "value": "Space Stone"
+          "value": "Asgard"
         },
         "success": {
           "type": "typed-literal",
@@ -407,26 +189,159 @@
           "type": "literal",
           "value": "Reality Stone Heist"
         },
-        "location": {
-          "type": "uri",
-          "value": "#asgard"
-        },
         "year": {
           "type": "literal",
           "value": "2013"
         },
-        "stoneUri": {
+        "stoneURI": {
           "type": "uri",
           "value": "#realitystone"
         },
-        "stone": {
+        "stoneName": {
           "type": "literal",
           "value": "Reality Stone"
+        },
+        "locationURI": {
+          "type": "uri",
+          "value": "#asgard"
+        },
+        "location": {
+          "type": "literal",
+          "value": "Asgard"
         },
         "success": {
           "type": "typed-literal",
           "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
           "value": "1"
+        }
+      },
+      {
+        "hero": {
+          "type": "uri",
+          "value": "#blackwidow"
+        },
+        "avenger": {
+          "type": "literal",
+          "value": "Black Widow"
+        },
+        "heistURI": {
+          "type": "uri",
+          "value": "#soulstoneheist"
+        },
+        "heist": {
+          "type": "literal",
+          "value": "Soul Stone Heist"
+        },
+        "year": {
+          "type": "literal",
+          "value": "2014"
+        },
+        "stoneURI": {
+          "type": "uri",
+          "value": "#soulstone"
+        },
+        "stoneName": {
+          "type": "literal",
+          "value": "Soul Stone"
+        },
+        "locationURI": {
+          "type": "uri",
+          "value": "#vormir"
+        },
+        "location": {
+          "type": "literal",
+          "value": "Vormir"
+        },
+        "success": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "1"
+        }
+      },
+      {
+        "hero": {
+          "type": "uri",
+          "value": "#hawkeye"
+        },
+        "avenger": {
+          "type": "literal",
+          "value": "Hawkeye"
+        },
+        "heistURI": {
+          "type": "uri",
+          "value": "#soulstoneheist"
+        },
+        "heist": {
+          "type": "literal",
+          "value": "Soul Stone Heist"
+        },
+        "year": {
+          "type": "literal",
+          "value": "2014"
+        },
+        "stoneURI": {
+          "type": "uri",
+          "value": "#soulstone"
+        },
+        "stoneName": {
+          "type": "literal",
+          "value": "Soul Stone"
+        },
+        "locationURI": {
+          "type": "uri",
+          "value": "#vormir"
+        },
+        "location": {
+          "type": "literal",
+          "value": "Vormir"
+        },
+        "success": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "1"
+        }
+      },
+      {
+        "hero": {
+          "type": "uri",
+          "value": "#ironman"
+        },
+        "avenger": {
+          "type": "literal",
+          "value": "Iron Man"
+        },
+        "heistURI": {
+          "type": "uri",
+          "value": "#spacestoneheist-1"
+        },
+        "heist": {
+          "type": "literal",
+          "value": "Space Stone Heist #1"
+        },
+        "year": {
+          "type": "literal",
+          "value": "2012"
+        },
+        "stoneURI": {
+          "type": "uri",
+          "value": "#spacestone"
+        },
+        "stoneName": {
+          "type": "literal",
+          "value": "Space Stone"
+        },
+        "locationURI": {
+          "type": "uri",
+          "value": "#nyc"
+        },
+        "location": {
+          "type": "literal",
+          "value": "New York City"
+        },
+        "success": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "0"
         }
       },
       {
@@ -446,26 +361,73 @@
           "type": "literal",
           "value": "Space Stone Heist #1"
         },
-        "location": {
-          "type": "uri",
-          "value": "#nyc"
-        },
         "year": {
           "type": "literal",
           "value": "2012"
         },
-        "stoneUri": {
+        "stoneURI": {
           "type": "uri",
           "value": "#spacestone"
         },
-        "stone": {
+        "stoneName": {
           "type": "literal",
           "value": "Space Stone"
+        },
+        "locationURI": {
+          "type": "uri",
+          "value": "#nyc"
+        },
+        "location": {
+          "type": "literal",
+          "value": "New York City"
         },
         "success": {
           "type": "typed-literal",
           "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
           "value": "0"
+        }
+      },
+      {
+        "hero": {
+          "type": "uri",
+          "value": "#hulk"
+        },
+        "avenger": {
+          "type": "literal",
+          "value": "Hulk"
+        },
+        "heistURI": {
+          "type": "uri",
+          "value": "#timestoneheist"
+        },
+        "heist": {
+          "type": "literal",
+          "value": "Time Stone Heist"
+        },
+        "year": {
+          "type": "literal",
+          "value": "2012"
+        },
+        "stoneURI": {
+          "type": "uri",
+          "value": "#timestone"
+        },
+        "stoneName": {
+          "type": "literal",
+          "value": "Time Stone"
+        },
+        "locationURI": {
+          "type": "uri",
+          "value": "#nyc"
+        },
+        "location": {
+          "type": "literal",
+          "value": "New York City"
+        },
+        "success": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "1"
         }
       }
     ]

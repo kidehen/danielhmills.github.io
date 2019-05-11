@@ -75,9 +75,27 @@ $(document).ready( function () {
 
             return data;
          }
-         }, {"data":"location.value"},
+         },   { 
+         "data": "location.value",
+         "render": function(data, type, row, meta){
+            if(type === 'display'){
+                data = '<a href="http://demo.openlinksw.com:8890/describe/?url=' + encodeURIComponent(row.locationURI.value) + '&distinct=1' + '">' + data + '</a>';
+            }
+
+            return data;
+         }
+         },
         {"data":"year.value"},
-        {"data":"stone.value"},        {"data":"success.value"},
+         { 
+         "data": "stone.value",
+         "render": function(data, type, row, meta){
+            if(type === 'display'){
+                data = '<a href="http://demo.openlinksw.com:8890/describe/?url=' + encodeURIComponent(row.stoneURI.value) + '&distinct=1' + '">' + data + '</a>';
+            }
+
+            return data;
+         }
+         },,        {"data":"success.value"},
     ]
     });
 } ); 
