@@ -87,7 +87,7 @@ $(document).ready( function () {
          },
         {"data":"year.value"},
          { 
-         "data": "stone.value",
+         "data": "stoneName.value",
          "render": function(data, type, row, meta){
             if(type === 'display'){
                 data = '<a href="http://demo.openlinksw.com:8890/describe/?url=' + encodeURIComponent(row.stoneURI.value) + '&distinct=1' + '">' + data + '</a>';
