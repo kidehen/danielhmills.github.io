@@ -90,7 +90,7 @@
                     <h3>Part 1: Who survived?</h3>
                     <p class="visible">The movie starts with the dusting of Hawkeye's family, in addiiton to Iron Man and Nebula returning to Earth, with assistance from Captain Marvel. As Thanos's actions are explained to the group, we learn more about the Characters who
                         are currently dusted or unnacounted for.</p>
-                    <p>In order to find the characters who survived the snap, we will be querying for relations in the inserted dataset, that signify post-snap survival status.</p><img src="../assets/img/endgame-survivors.png">
+                    <p>In order to find the characters who survived the snap, we will be querying for relations in the inserted dataset, that signify post-snap survival status.</p><img class="img-fluid" src="../assets/img/endgame-survivors.png">
                     <div role="tablist" id="accordion-1">
                         <div class="card">
                             <div class="card-header" role="tab">
@@ -158,12 +158,9 @@
                     <h3>Part 2: The First Battle</h3>
                     <p class="visible">After seeing a giant radiation signal coming from a distant planet, the remaining Avengers decide to confront the Mad Titan and do whatever it takes to reverse the snap.&nbsp;</p>
                 </div>
-                <div class="col-6"><img src="../assets/img/thanos-battle-1.png"></div>
-                <div class="col-6">
-                    <p class="lead" style="padding-top: 139px;">PREFIX endgame: &lt;#&gt;<br><br>SELECT DISTINCT <br>?heroes<br>FROM &lt;urn:mcu:endgame&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {<br>&nbsp;
-                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ?s&nbsp;schema:name ?heroes;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;^endgame:heroes endgame:ThanosFight1.<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p>
+                <div class="col-6"><img class="img-fluid" src="../assets/img/thanos-battle-1.png"></div>
+                <div class="col-6 align-self-center">
+                    <p style="padding-top: 0;">PREFIX endgame: &lt;#&gt;<br><br>SELECT DISTINCT <br>?heroes<br>FROM &lt;urn:mcu:endgame&gt;<br>&nbsp;{<br>&nbsp; &nbsp; &nbsp; &nbsp;?s&nbsp;schema:name ?heroes;<br>&nbsp; &nbsp; &nbsp; &nbsp; ^endgame:heroes endgame:ThanosFight1.<br>&nbsp;}</p>
                 </div>
                 <div class="col-md-12" style="padding-bottom: 45px;">
                     <div role="tablist" id="accordion-1">
