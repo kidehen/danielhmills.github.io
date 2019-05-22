@@ -169,9 +169,9 @@
                     <div role="tablist" id="accordion-1">
                         <div class="card">
                             <div class="card-header" role="tab">
-                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="true" aria-controls="accordion-1 .item-1" href="div#accordion-1 .item-1">Query: Which Surviving Characters went to fight Thanos ?</a></h5>
+                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-1" href="div#accordion-1 .item-1">Query: Which Surviving Characters went to fight Thanos ?</a></h5>
                             </div>
-                            <div class="collapse show item-1" role="tabpanel" data-parent="#accordion-1">
+                            <div class="collapse item-1" role="tabpanel" data-parent="#accordion-1">
                                 <div class="card-body">
                                     <p class="card-text">PREFIX endgame: &lt;#&gt;<br><br>SELECT DISTINCT&nbsp;<br>?heroes<br>FROM &lt;urn:mcu:endgame&gt;<br>&nbsp;{<br>&nbsp; &nbsp; &nbsp; &nbsp;?s&nbsp;schema:name ?heroes;<br>&nbsp; &nbsp; &nbsp; &nbsp; ^endgame:heroes
                                         endgame:ThanosFight1.<br>&nbsp;}<br></p>
