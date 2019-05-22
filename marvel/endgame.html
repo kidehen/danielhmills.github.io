@@ -158,17 +158,31 @@
                     <h3>Part 2: The First Battle</h3>
                     <p class="visible">After seeing a giant radiation signal coming from a distant planet, the remaining Avengers decide to confront the Mad Titan and do whatever it takes to reverse the snap.&nbsp;</p>
                 </div>
-                <div class="col-6"><img class="img-fluid" src="../assets/img/thanos-battle-1.png"></div>
+                <div class="col-6"><img class="img-fluid" src="../assets/img/thanos-battle-1-2.png"></div>
                 <div class="col-6 align-self-center">
-                    <p style="padding-top: 0;">PREFIX endgame: &lt;#&gt;<br><br>SELECT DISTINCT <br>?heroes<br>FROM &lt;urn:mcu:endgame&gt;<br>&nbsp;{<br>&nbsp; &nbsp; &nbsp; &nbsp;?s&nbsp;schema:name ?heroes;<br>&nbsp; &nbsp; &nbsp; &nbsp; ^endgame:heroes endgame:ThanosFight1.<br>&nbsp;}</p>
+                    <p style="padding-top: 0;">&lt;#ThanosFight1&gt;<br>a endgame:Battle;<br>schema:name "Fight With Thanos (Post Snap)";<br>endgame:heroes &lt;#captainmarvel&gt;,<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;&lt;#captainamerica&gt;,<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;#thor&gt;,<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp;&lt;#rocket&gt;,<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;#warmachine&gt;,<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;#nebula&gt;,<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;#blackwidow&gt;;<br>endgame:villains &nbsp;&lt;#thanos&gt;.</p>
                 </div>
                 <div class="col-md-12" style="padding-bottom: 45px;">
                     <div role="tablist" id="accordion-1">
                         <div class="card">
                             <div class="card-header" role="tab">
-                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-1" href="div#accordion-1 .item-1">Query Result: Which Surviving Characters went to fight Thanos ?</a></h5>
+                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="true" aria-controls="accordion-1 .item-1" href="div#accordion-1 .item-1">Query: Which Surviving Characters went to fight Thanos ?</a></h5>
                             </div>
-                            <div class="collapse item-1" role="tabpanel" data-parent="#accordion-1">
+                            <div class="collapse show item-1" role="tabpanel" data-parent="#accordion-1">
+                                <div class="card-body">
+                                    <p class="card-text">PREFIX endgame: &lt;#&gt;<br><br>SELECT DISTINCT&nbsp;<br>?heroes<br>FROM &lt;urn:mcu:endgame&gt;<br>&nbsp;{<br>&nbsp; &nbsp; &nbsp; &nbsp;?s&nbsp;schema:name ?heroes;<br>&nbsp; &nbsp; &nbsp; &nbsp; ^endgame:heroes
+                                        endgame:ThanosFight1.<br>&nbsp;}<br></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-2" href="div#accordion-1 .item-2">Query Result: Which Surviving Characters went to fight Thanos ?</a></h5>
+                            </div>
+                            <div class="collapse item-2" role="tabpanel" data-parent="#accordion-1">
                                 <div class="card-body">
                                     <p class="card-text">heroes<br>ANY<br>--------<br> &nbsp;War Machine<br> &nbsp;Nebula<br> &nbsp;Black Widow<br> &nbsp;Rocket<br> &nbsp;Captain America<br>&nbsp;Thor<br> &nbsp;Captain Marvel<br></p>
                                 </div>
@@ -176,9 +190,9 @@
                         </div>
                         <div class="card">
                             <div class="card-header" role="tab">
-                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-2" href="div#accordion-1 .item-2">(Optional): Live Result Demonstrations</a></h5>
+                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-3" href="div#accordion-1 .item-3">(Optional): Live Result Demonstrations</a></h5>
                             </div>
-                            <div class="collapse item-2" role="tabpanel" data-parent="#accordion-1">
+                            <div class="collapse item-3" role="tabpanel" data-parent="#accordion-1">
                                 <div class="card-body">
                                     <ul>
                                         <li><a href="http://demo.openlinksw.com:8890/sparql?default-graph-uri=&amp;qtxt=PREFIX%20endgame%3A%20%3C%23%3E%0A%0ASELECT%0A%3Favenger%0A%3Fname%20%0AFROM%20%3Curn%3Amcu%3Aendgame%3E%0AWHERE%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Favenger%20schema%3Aname%20%3Fname%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20endgame%3AsurvivedDecimation%20%22true%22%5E%5Exsd%3Aboolean.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D&amp;should-sponge=&amp;format=text%2Fx-html%2Btr&amp;timeout=20000">Which Avengers Survived The Snap (Query Definition)</a></li>
