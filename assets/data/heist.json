@@ -29,7 +29,7 @@
           "type": "literal",
           "value": "1970"
         },
-        "stone": {
+        "stoneName": {
           "type": "literal",
           "value": "Space Stone"
         },
@@ -68,7 +68,7 @@
           "type": "literal",
           "value": "2012"
         },
-        "stone": {
+        "stoneName": {
           "type": "literal",
           "value": "Space Stone"
         },
@@ -107,7 +107,7 @@
           "type": "literal",
           "value": "2012"
         },
-        "stone": {
+        "stoneName": {
           "type": "literal",
           "value": "Power Stone"
         },
@@ -146,7 +146,7 @@
           "type": "literal",
           "value": "2012"
         },
-        "stone": {
+        "stoneName": {
           "type": "literal",
           "value": "Power Stone"
         },
@@ -185,7 +185,7 @@
           "type": "literal",
           "value": "2014"
         },
-        "stone": {
+        "stoneName": {
           "type": "literal",
           "value": "Soul Stone"
         },
@@ -224,7 +224,7 @@
           "type": "literal",
           "value": "2012"
         },
-        "stone": {
+        "stoneName": {
           "type": "literal",
           "value": "Time Stone"
         },
@@ -263,7 +263,7 @@
           "type": "literal",
           "value": "2014"
         },
-        "stone": {
+        "stoneName": {
           "type": "literal",
           "value": "Soul Stone"
         },
@@ -302,7 +302,7 @@
           "type": "literal",
           "value": "2013"
         },
-        "stone": {
+        "stoneName": {
           "type": "literal",
           "value": "Reality Stone"
         },
@@ -341,7 +341,7 @@
           "type": "literal",
           "value": "1970"
         },
-        "stone": {
+        "stoneName": {
           "type": "literal",
           "value": "Space Stone"
         },
@@ -380,7 +380,7 @@
           "type": "literal",
           "value": "2012"
         },
-        "stone": {
+        "stoneName": {
           "type": "literal",
           "value": "Mind Stone"
         },
@@ -419,7 +419,7 @@
           "type": "literal",
           "value": "2013"
         },
-        "stone": {
+        "stoneName": {
           "type": "literal",
           "value": "Reality Stone"
         },
@@ -458,7 +458,7 @@
           "type": "literal",
           "value": "2012"
         },
-        "stone": {
+        "stoneName": {
           "type": "literal",
           "value": "Space Stone"
         },
