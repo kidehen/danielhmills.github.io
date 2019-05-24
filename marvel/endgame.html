@@ -57,18 +57,52 @@
                             </div>
                             <div class="collapse item-1" role="tabpanel" data-parent="#accordion-1">
                                 <div class="card-body">
-                                    <p class="card-text">PREFIX endgame: &lt;#&gt;<br><br>INSERT INTO GRAPH &lt;urn:mcu:endgame&gt; {<br>&lt;#ironman&gt;<br>a endgame:Avenger;<br>schema:name "Iron Man";<br>endgame:survivedDecimation "true"^^xsd:boolean.<br><br>&lt;#warmachine&gt;<br>a
-                                        endgame:Avenger;<br>schema:name "War Machine";<br>endgame:survivedDecimation "true"^^xsd:boolean.<br><br>&lt;#nebula&gt;<br>a endgame:Avenger;<br>schema:name "Nebula";<br>endgame:survivedDecimation "true"^^xsd:boolean.<br><br>&lt;#blackwidow&gt;<br>a
-                                        endgame:Avenger;<br>schema:name "Black Widow";<br>endgame:survivedDecimation "true"^^xsd:boolean.<br><br>&lt;#hulk&gt;<br>a endgame:Avenger;<br>schema:name "Hulk";<br>endgame:survivedDecimation "true"^^xsd:boolean.<br><br>&lt;#hawkeye&gt;<br>a
-                                        endgame:Avenger;<br>schema:name "Hawkeye";<br>endgame:survivedDecimation "true"^^xsd:boolean.<br><br>&lt;#rocket&gt;<br>a endgame:Avenger;<br>schema:name "Rocket";<br>endgame:survivedDecimation "true"^^xsd:boolean.<br><br>&lt;#captainamerica&gt;<br>a
-                                        endgame:Avenger;<br>schema:name "Captain America";<br>endgame:survivedDecimation "true"^^xsd:boolean.<br><br>&lt;#thor&gt;<br>a endgame:Avenger;<br>schema:name "Thor";<br>endgame:survivedDecimation "true"^^xsd:boolean.<br><br>&lt;#antman&gt;<br>a
-                                        endgame:Avenger;<br>schema:name "Ant-Man";<br>endgame:survivedDecimation "true"^^xsd:boolean.<br><br>&lt;#captainmarvel&gt;<br>a endgame:Avenger;<br>schema:name "Captain Marvel";<br>endgame:survivedDecimation "true"^^xsd:boolean.<br><br>&lt;#bucky&gt;<br>a
-                                        endgame:Avenger;<br>schema:name "Bucky";<br>endgame:survivedDecimation "false"^^xsd:boolean.<br><br>&lt;#blackpanther&gt;<br>a endgame:Avenger;<br>schema:name "Black Panther";<br>endgame:survivedDecimation "false"^^xsd:boolean.<br><br>&lt;#falcon&gt;<br>a
-                                        endgame:Avenger;<br>schema:name "Falcon";<br>endgame:survivedDecimation "false"^^xsd:boolean.<br><br>&lt;#scarletwitch&gt;<br>a endgame:Avenger;<br>schema:name "Scarlet Witch";<br>endgame:survivedDecimation "false"^^xsd:boolean.<br><br>&lt;#starlord&gt;<br>a
-                                        endgame:Avenger;<br>schema:name "Starlord";<br>endgame:survivedDecimation "false"^^xsd:boolean.<br><br>&lt;#mantis&gt;<br>a endgame:Avenger;<br>schema:name "Mantis";<br>endgame:survivedDecimation "false"^^xsd:boolean.<br><br>&lt;#drax&gt;<br>a
-                                        endgame:Avenger;<br>schema:name "Drax";<br>endgame:survivedDecimation "false"^^xsd:boolean.<br><br>&lt;#drstrange&gt;<br>a endgame:Avenger;<br>schema:name "Doctor Strange";<br>endgame:survivedDecimation "false"^^xsd:boolean.<br><br>&lt;#thewasp&gt;<br>a
-                                        endgame:Avenger;<br>schema:name "The Wasp";<br>endgame:survivedDecimation "false"^^xsd:boolean.<br><br>&lt;#hankpym&gt;<br>a endgame:Avenger;<br>schema:name "Hank Pym";<br>endgame:survivedDecimation "false"^^xsd:boolean.<br><br>&lt;#janetvandyne&gt;<br>a
-                                        endgame:Avenger;<br>schema:name "Janet van Dyne";<br>endgame:survivedDecimation "false"^^xsd:boolean.<br><br>}</p>
+                                    <p class="card-text">SPARQL<br>CLEAR GRAPH ;<br><br>SPARQL<br>PREFIX endgame: &lt;#&gt;<br>INSERT INTO GRAPH &lt;urn:mcu:endgame&gt;<br>&nbsp;{<br>&lt;#ironman&gt;<br>schema:name "Iron Man";<br>schema:image ;<br>schema:memberOf &lt;#theavengers&gt;;<br>endgame:survivedDecimation
+                                        "true"^^xsd:boolean.<br><br>&lt;#warmachine&gt;<br>schema:name "War Machine";<br>schema:image ;<br>schema:memberOf &lt;#theavengers&gt;;<br>endgame:survivedDecimation "true"^^xsd:boolean.<br><br>&lt;#nebula&gt;<br>schema:name
+                                        "Nebula";<br>schema:image ;<br>schema:memberOf &lt;#theavengers&gt;;<br>endgame:survivedDecimation "true"^^xsd:boolean.<br><br>&lt;#blackwidow&gt;<br>schema:name "Black Widow";<br>schema:image ;<br>schema:memberOf
+                                        &lt;#theavengers&gt;;<br>endgame:survivedDecimation "true"^^xsd:boolean.<br><br>&lt;#hulk&gt;<br>schema:name "Hulk";<br>schema:image ;<br>schema:memberOf &lt;#theavengers&gt;;<br>endgame:survivedDecimation "true"^^xsd:boolean.<br><br>&lt;#hawkeye&gt;<br>schema:name
+                                        "Hawkeye";<br>schema:image ;<br>schema:memberOf &lt;#theavengers&gt;;<br>endgame:survivedDecimation "true"^^xsd:boolean.<br><br>&lt;#rocket&gt;<br>schema:name "Rocket";<br>schema:image ;<br>schema:memberOf &lt;#theavengers&gt;;<br>endgame:survivedDecimation
+                                        "true"^^xsd:boolean.<br><br>&lt;#captainamerica&gt;<br>schema:name "Captain America";<br>schema:image ;<br>schema:memberOf &lt;#theavengers&gt;;<br>endgame:survivedDecimation "true"^^xsd:boolean.<br><br>&lt;#thor&gt;<br>schema:name
+                                        "Thor";<br>schema:image ;<br>schema:memberOf &lt;#theavengers&gt;;<br>endgame:survivedDecimation "true"^^xsd:boolean.<br><br>&lt;#antman&gt;<br>schema:name "Ant-Man";<br>schema:memberOf &lt;#theavengers&gt;;<br>endgame:survivedDecimation
+                                        "true"^^xsd:boolean.<br><br>&lt;#captainmarvel&gt;<br>schema:name "Captain Marvel";<br>schema:memberOf &lt;#theavengers&gt;;<br>endgame:survivedDecimation "true"^^xsd:boolean.<br><br>&lt;#bucky&gt;<br>schema:name
+                                        "Bucky";<br>endgame:survivedDecimation "false"^^xsd:boolean.<br><br>&lt;#blackpanther&gt;<br>schema:name "Black Panther";<br>endgame:survivedDecimation "false"^^xsd:boolean.<br><br>&lt;#falcon&gt;<br>schema:name
+                                        "Falcon";<br>schema:memberOf &lt;#theavengers&gt;;<br>endgame:survivedDecimation "false"^^xsd:boolean.<br><br>&lt;#scarletwitch&gt;<br>schema:name "Scarlet Witch";<br>endgame:survivedDecimation "false"^^xsd:boolean.<br><br>&lt;#starlord&gt;<br>schema:name
+                                        "Starlord";<br>endgame:survivedDecimation "false"^^xsd:boolean.<br><br>&lt;#mantis&gt;<br>schema:name "Mantis";<br>endgame:survivedDecimation "false"^^xsd:boolean.<br><br>&lt;#drax&gt;<br>schema:name "Drax";<br>endgame:survivedDecimation
+                                        "false"^^xsd:boolean.<br><br>&lt;#drstrange&gt;<br>schema:name "Doctor Strange";<br>endgame:survivedDecimation "false"^^xsd:boolean.<br><br>&lt;#thewasp&gt;<br>schema:name "The Wasp";<br>endgame:survivedDecimation
+                                        "false"^^xsd:boolean.<br><br>&lt;#hankpym&gt;<br>schema:name "Hank Pym";<br>endgame:survivedDecimation "false"^^xsd:boolean.<br><br>&lt;#janetvandyne&gt;<br>schema:name "Janet van Dyne";<br>endgame:survivedDecimation
+                                        "false"^^xsd:boolean.<br><br>&lt;#thanos&gt;<br>a endgame:Villain;<br>schema:name "Thanos";<br>endgame:survivedDecimation "true"^^xsd:boolean.<br><br><br>&lt;#ThanosFight1&gt;<br>a endgame:Battle;<br>schema:name
+                                        "Fight With Thanos (Post Snap)";<br>endgame:heroes &lt;#captainmarvel&gt;,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;#captainamerica&gt;,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;#thor&gt;,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &lt;#rocket&gt;,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;#warmachine&gt;,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;#nebula&gt;,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;#blackwidow&gt;;<br>endgame:villains<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;#thanos&gt;.<br><br><br>#Infinity
+                                        Stones<br><br>&lt;#powerstone&gt;<br>a endgame:InfinityStone;<br>schema:name "Power Stone";<br>endgame:casedIn &lt;#orb&gt;;<br>schema:image .<br><br>&lt;#spacestone&gt;<br>a endgame:InfinityStone;<br>schema:name
+                                        "Space Stone";<br>endgame:casedIn &lt;#tesseract&gt;;<br>schema:image .<br><br><br>&lt;#mindstone&gt;<br>a endgame:InfinityStone;<br>schema:name "Mind Stone";<br>endgame:casedIn &lt;#scepter&gt;;<br>schema:image
+                                        .<br><br>&lt;#soulstone&gt;<br>a endgame:InfinityStone;<br>schema:name "Soul Stone";<br>schema:image .<br><br>&lt;#timestone&gt;<br>a endgame:InfinityStone;<br>schema:name "Time Stone";<br>endgame:casedIn &lt;#eyeofagomotto&gt;;<br>schema:image
+                                        .<br><br>&lt;#realitystone&gt;<br>a endgame:InfinityStone;<br>schema:name "Reality Stone";<br>endgame:casedIn &lt;#ather&gt;;<br>schema:image .<br><br><br>#Heists<br><br>&lt;#powerstoneheist&gt;<br>a endgame:Event;<br>schema:name
+                                        "Power Stone Heist";<br>endgame:location &lt;#morag&gt;;<br>endgame:year "2012";<br>endgame:pastFilm &lt;#guardiansofthegalaxy&gt;;<br>endgame:target &lt;#powerstone&gt;;<br>endgame:heistMembers &lt;#nebula&gt;,
+                                        &lt;#warmachine&gt;;<br>endgame:heistSuccess "true"^^xsd:boolean.<br><br>&lt;#spacestoneheist-1&gt;<br>a endgame:Event;<br>schema:name "Space Stone Heist #1";<br>endgame:location &lt;#nyc&gt;;<br>endgame:year "2012";<br>endgame:pastFilm
+                                        &lt;#theavengers-film&gt;;<br>endgame:target &lt;#spacestone&gt;;<br>endgame:heistMembers &lt;#ironman&gt;, &lt;#antman&gt;;<br>endgame:heistSuccess "false"^^xsd:boolean.<br><br>&lt;#spacestoneheist-2&gt;<br>a endgame:Event;<br>schema:name
+                                        "Space Stone Heist #2";<br>endgame:location &lt;#camplehigh&gt;;<br>endgame:year "1970";<br>endgame:target &lt;#spacestone&gt;;<br>endgame:pastFilm &lt;#theavengers-film&gt;;<br>endgame:heistMembers &lt;#ironman&gt;,
+                                        &lt;#captainamerica&gt;;<br>endgame:heistSuccess "true"^^xsd:boolean.<br><br>&lt;#mindstoneheist&gt;<br>a endgame:Event;<br>schema:name "Mind Stone Heist";<br>endgame:location &lt;#nyc&gt;;<br>endgame:year "2012";<br>endgame:pastFilm
+                                        &lt;#theavengers-film&gt;;<br>endgame:target &lt;#mindstone&gt;;<br>endgame:heistMembers &lt;#captainamerica&gt;;<br>endgame:heistSuccess "true"^^xsd:boolean.<br><br>&lt;#soulstoneheist&gt;<br>a endgame:Event;<br>schema:name
+                                        "Soul Stone Heist";<br>endgame:location &lt;#vormir&gt;;<br>endgame:year "2014";<br>endgame:pastFilm &lt;#infinitywar&gt;;<br>endgame:target &lt;#soulstone&gt;;<br>endgame:heistMembers &lt;#hawkeye&gt;,&lt;#blackwidow&gt;;<br>endgame:heistSuccess
+                                        "true"^^xsd:boolean.<br><br>&lt;#timestoneheist&gt;<br>a endgame:Event;<br>schema:name "Time Stone Heist";<br>endgame:location &lt;#nyc&gt;;<br>endgame:year "2012";<br>endgame:pastFilm &lt;#theavengers-film&gt;;<br>endgame:target
+                                        &lt;#timestone&gt;;<br>endgame:heistMembers &lt;#hulk&gt;;<br>endgame:heistSuccess "true"^^xsd:boolean.<br><br>&lt;#realitystoneheist&gt;<br>a endgame:Event;<br>schema:name "Reality Stone Heist";<br>endgame:location
+                                        &lt;#asgard&gt;;<br>endgame:year "2013";<br>endgame:pastFilm &lt;#thorthedarkworld&gt;;<br>endgame:target &lt;#realitystone&gt;;<br>endgame:heistMembers &lt;#thor&gt;,&lt;#rocket&gt;;<br>endgame:heistSuccess "true"^^xsd:boolean.<br><br>#Locations<br><br>&lt;#morag&gt;<br>a
+                                        schema:Place;<br>schema:name "Morag";<br>schema:image ;<br>schema:schema:filmTimeline &lt;#guardiansofthegalaxy&gt;.<br><br>&lt;#nyc&gt;<br>a schema:Place;<br>schema:name "New York City";<br>schema:image ;<br>schema:filmTimeline
+                                        &lt;#theavengers-film&gt;.<br><br>&lt;#asgard&gt;<br>a schema:Place;<br>schema:name "Asgard";<br>schema:image ;<br>schema:filmTimeline &lt;#thorthedarkworld&gt;.<br><br>&lt;#camplehigh&gt;<br>a schema:Place;<br>schema:name
+                                        "Camp Lehigh";<br>schema:image .<br><br>&lt;#vormir&gt;<br>a schema:Place;<br>schema:name "Vormir";<br>schema:image ;<br>schema:filmTimeline &lt;#infinitywar&gt;.<br><br>#Films<br>&lt;#infinitywar&gt;<br>a schema:Film;<br>schema:name
+                                        "Avengers: Infinity War";<br>owl:sameAs .<br><br>#TEMPORARY ONTOLOGY PLACEMENT<br><br>#Classes<br><br>endgame:Avenger<br>a owl:Class;<br>schema:name "Avenger";<br>schema:description "A member of the Avengers group";<br>rdfs:subClassOf
+                                        schema:Person.<br><br>endgame:Event<br>a owl:Class;<br>schema:name "Event";<br>schema:description "A significant occurrence during the film. ";<br>rdfs:subClassOf schema:Event.<br><br>endgame:Team<br>a owl:Class;<br>schema:name
+                                        "The Avengers";<br>schema:description "A team of extraordinary individuals with super powers or other unique chatacteristics.";<br>rdfs:subClassOf schema:Person.<br><br>endgame:Battle<br>a owl:Class;<br>schema:name
+                                        "Battle";<br>schema:description "An occured fight event between heroes and villans";<br>rdfs:subClassOf schema:Event.<br><br>#Properties<br>endgame:survivedDecimation<br>a rdf:Property;<br>a owl:DatatypeProperty;<br>schema:name
+                                        "survivedDecimation";<br>schema:description "Confirms if somebody survived The Decimation";<br>schema:domainIncludes schema:Person;<br>schema:rangeIncludes xsd:boolean.<br><br>endgame:heroes<br>a rdf:Property;<br>a
+                                        owl:ObjectProperty;<br>schema:name "heroes";<br>schema:description "Identifies superheroes and allies in a battle.";<br>schema:domainIncludes endgame:Battle;<br>schema:rangeIncludes schema:Person.<br><br>endgame:member<br>a
+                                        rdf:Property;<br>a owl:ObjectProperty;<br>schema:name "member";<br>schema:description "Creates relation between a person and group";<br>schema:domainIncludes endgame:Character;<br>schema:rangeIncludes endgame:Team.<br><br>endgame:heistSuccess<br>a
+                                        rdf:Property;<br>a owl:DatatypeProperty;<br>schema:name "heistSuccess";<br>schema:description "Answers if the Infinity Stone heist was successfull";<br>schema:domainIncludes endgame:Event;<br>schema:rangeIncludes
+                                        xsd:Boolean.<br><br>endgame:heistMembers<br>a rdf:Property;<br>a owl:ObjectProperty;<br>schema:name "heistMembers";<br>schema:description "Answers if the Infinity Stone heist was successfull";<br>schema:domainIncludes
+                                        endgame:Event;<br>schema:rangeIncludes schema:Person.<br><br>endgame:location<br>a rdf:Property;<br>a owl:ObjectProperty;<br>schema:name "location";<br>schema:description "defines a location";<br>schema:domainIncludes
+                                        endgame:Event;<br>schema:rangeIncludes schema:Place.<br><br>endgame:year<br>a rdf:Property;<br>a owl:DataTypeProperty;<br>schema:name "year";<br>schema:description "defines a year";<br>schema:domainIncludes endgame:Event;<br>schema:rangeIncludes
+                                        xsd:integer.<br><br>endgame:pastFilm<br>a rdf:Property;<br>a owl:ObjectProperty;<br>schema:name "pastFilm";<br>schema:description "defines a past film of reference";<br>schema:domainIncludes endgame:Event, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;schema:Person,
+                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;endgame:InfinityStone;<br>schema:rangeIncludes schema:Movie.<br>};</p>
                                 </div>
                             </div>
                         </div>
@@ -92,7 +126,7 @@
                     <p>In order to find the characters who survived the snap, we will be querying for relations in the inserted dataset, that signify post-snap survival status.</p>
                 </div>
                 <div class="col-12" style="padding-bottom: 45px;padding-top: 45px;">
-                    <h4>Example Statement Expressed in TURTLE syntax:</h4>
+                    <h4>Example Statement Expressed in RDF-TURTLE syntax:</h4>
                     <p>&lt;#ironman&gt; endgame:survivedDecimation "true"</p>
                 </div>
                 <div class="col-12" style="padding-bottom: 45px;padding-top: 45px;"><img class="img-fluid" src="../assets/img/endgame-survivors-1.png"></div>
@@ -110,9 +144,9 @@
                         </div>
                         <div class="card">
                             <div class="card-header" role="tab">
-                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="true" aria-controls="accordion-1 .item-2" href="div#accordion-1 .item-2">(Optional): Live Result Demonstrations</a></h5>
+                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-2" href="div#accordion-1 .item-2">(Optional): Live Result Demonstrations</a></h5>
                             </div>
-                            <div class="collapse show item-2" role="tabpanel" data-parent="#accordion-1">
+                            <div class="collapse item-2" role="tabpanel" data-parent="#accordion-1">
                                 <div class="card-body">
                                     <ul>
                                         <li><a href="http://demo.openlinksw.com:8890/sparql?default-graph-uri=&amp;qtxt=PREFIX%20endgame%3A%20%3C%23%3E%0A%0ASELECT%20DISTINCT%20%0A%3Furi%0A%3Fheroes%0AFROM%20%3Curn%3Amcu%3Aendgame%3E%0A%20%7B%0A%20%20%20%20%20%20%20%3Furi%20schema%3Aname%20%3Fheroes%3B%0A%20%20%20%20%20%20%20%20%5Eendgame%3Aheroes%20endgame%3AThanosFight1.%0A%20%7D&amp;should-sponge=&amp;format=text%2Fhtml&amp;timeout=20000">Which Avengers Survived The Snap (Query Definition)</a></li>
@@ -140,7 +174,7 @@
                     <p class="visible">After seeing a giant radiation signal coming from a distant planet, the remaining Avengers decide to confront the Mad Titan and do whatever it takes to reverse the snap.&nbsp;</p>
                 </div>
                 <div class="col-12 align-self-start">
-                    <h4>Event Details Described using RDF-TURTLE</h4>
+                    <h4>Event Details Expressed in RDF-TURTLE syntax</h4>
                     <p style="padding-top: 0;">&lt;#ThanosFight1&gt;<br><br>a endgame:Battle;<br><br>schema:name "Fight With Thanos (Post Snap)";<br><br>endgame:heroes &lt;#captainmarvel&gt;,<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                         &nbsp; &nbsp; &nbsp;&lt;#captainamerica&gt;,<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;#thor&gt;,<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;#rocket&gt;,<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;#warmachine&gt;,<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -156,7 +190,7 @@
                             </div>
                             <div class="collapse item-1" role="tabpanel" data-parent="#accordion-1">
                                 <div class="card-body">
-                                    <p class="card-text">PREFIX endgame: &lt;#&gt;<br><br>SELECT DISTINCT <br>?uri<br>?heroes<br>FROM <br> {<br>&nbsp;&nbsp;&nbsp; ?uri schema:name ?heroes;<br>&nbsp;&nbsp;&nbsp;&nbsp;^endgame:heroes endgame:ThanosFight1.<br> }<br></p>
+                                    <p class="card-text">PREFIX endgame: &lt;#&gt;<br><br>SELECT DISTINCT <br>?uri<br>?heroes<br>FROM &lt;urn:mcu:endgame&gt;<br> {<br>&nbsp;&nbsp;&nbsp; ?uri schema:name ?heroes;<br>&nbsp;&nbsp;&nbsp;&nbsp;^endgame:heroes endgame:ThanosFight1.<br>                                        }<br></p>
                                 </div>
                             </div>
                         </div>
@@ -167,8 +201,8 @@
                             <div class="collapse item-2" role="tabpanel" data-parent="#accordion-1">
                                 <div class="card-body">
                                     <ul>
-                                        <li><a href="http://demo.openlinksw.com:8890/sparql?default-graph-uri=&amp;qtxt=PREFIX%20endgame%3A%20%3C%23%3E%0A%0ASELECT%20DISTINCT%20%0A%3Furi%0A%3Fheroes%0AFROM%20%3Curn%3Amcu%3Aendgame%3E%0A%20%7B%0A%20%20%20%20%20%20%20%3Furi%20schema%3Aname%20%3Fheroes%3B%0A%20%20%20%20%20%20%20%20%5Eendgame%3Aheroes%20endgame%3AThanosFight1.%0A%20%7D&amp;should-sponge=&amp;format=text%2Fhtml&amp;timeout=20000">Which Avengers Survived The Snap (Query Definition)</a></li>
-                                        <li><a href="http://demo.openlinksw.com:8890/sparql?default-graph-uri=&amp;query=PREFIX+endgame%3A+%3C%23%3E%0D%0A%0D%0ASELECT+DISTINCT+%0D%0A%3Furi%0D%0A%3Fheroes%0D%0AFROM+%3Curn%3Amcu%3Aendgame%3E%0D%0A+%7B%0D%0A+++++++%3Furi+schema%3Aname+%3Fheroes%3B%0D%0A++++++++%5Eendgame%3Aheroes+endgame%3AThanosFight1.%0D%0A+%7D&amp;should-sponge=&amp;format=text%2Fhtml&amp;timeout=20000">Which Avengers Survived The Snap (Query Result)</a></li>
+                                        <li><a href="http://demo.openlinksw.com:8890/sparql?default-graph-uri=&amp;qtxt=PREFIX%20endgame%3A%20%3C%23%3E%0A%0ASELECT%20DISTINCT%20%0A%3Furi%0A%3Fheroes%0AFROM%20%3Curn%3Amcu%3Aendgame%3E%0A%7B%0A%20%20%20%20%3Furi%20schema%3Aname%20%3Fheroes%3B%0A%20%20%20%20%5Eendgame%3Aheroes%20endgame%3AThanosFight1.%0A%7D&amp;should-sponge=&amp;format=text%2Fx-html%2Btr&amp;timeout=20000">Which Surviving Characters went to fight Thanos (Query Definition)</a></li>
+                                        <li><a href="http://demo.openlinksw.com:8890/sparql?default-graph-uri=&amp;query=PREFIX+endgame%3A+%3C%23%3E%0D%0A%0D%0ASELECT+DISTINCT+%0D%0A%3Furi%0D%0A%3Fheroes%0D%0AFROM+%3Curn%3Amcu%3Aendgame%3E%0D%0A%7B%0D%0A++++%3Furi+schema%3Aname+%3Fheroes%3B%0D%0A++++%5Eendgame%3Aheroes+endgame%3AThanosFight1.%0D%0A%7D&amp;should-sponge=&amp;format=text%2Fx-html%2Btr&amp;timeout=20000">Which Surviving Characters went to fight Thanos (Query Result)</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -194,35 +228,25 @@
                     <div role="tablist" id="accordion-1">
                         <div class="card">
                             <div class="card-header" role="tab">
-                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-1" href="div#accordion-1 .item-1">Query: Which stone heist did each Avenger take part in? Which year did they visit? Which timeline did it take place in? Was the heist successful?&nbsp;</a></h5>
+                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-1" href="div#accordion-1 .item-1">Query: Which stone heist did each Character take part in? Which year(s) did they visit, where was their heist located, and was their heist successful?&nbsp;</a></h5>
                             </div>
                             <div class="collapse item-1" role="tabpanel" data-parent="#accordion-1">
                                 <div class="card-body">
-                                    <p class="card-text">PREFIX endgame: &lt;#&gt;<br><br>SELECT DISTINCT<br>?name as ?avenger<br>?heist<br>?year<br>?stoneName as ?stone<br>?success<br>FROM &lt;urn:mcu:endgame&gt;<br>&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp; ?heistURI a endgame:Event;<br>&nbsp;&nbsp;&nbsp;
-                                        schema:name ?heist;<br>&nbsp;&nbsp;&nbsp; endgame:year ?year;<br>&nbsp;&nbsp;&nbsp; endgame:heistMembers ?hero;<br>&nbsp;&nbsp;&nbsp; endgame:target ?stone;<br>&nbsp;&nbsp;&nbsp; endgame:heistSuccess ?success.<br><br>&nbsp;&nbsp;&nbsp;
-                                        ?hero schema:name ?name.<br><br>&nbsp;&nbsp;&nbsp; ?stone schema:name ?stoneName<br><br>}<br></p>
+                                    <p class="card-text">PREFIX endgame: &lt;#&gt;<br><br>SELECT DISTINCT<br>?heistURI<br>?name as ?avenger<br>?heist<br>?year<br>?stoneName as ?stone<br>?success<br>FROM &lt;urn:mcu:endgame&gt;<br>&nbsp; {<br>&nbsp;&nbsp;?heistURI a endgame:Event;<br>&nbsp;&nbsp;schema:name
+                                        ?heist;<br>&nbsp;&nbsp;endgame:year ?year;<br>&nbsp;&nbsp;endgame:heistMembers ?hero;<br>&nbsp;&nbsp;endgame:target ?stone;<br>&nbsp;&nbsp;endgame:heistSuccess ?success.<br><br>&nbsp;&nbsp;?hero schema:name ?name.<br><br>&nbsp;&nbsp;?stone
+                                        schema:name ?stoneName<br><br>}<br></p>
                                 </div>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-header" role="tab">
-                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-2" href="div#accordion-1 .item-2">Query: Which Surviving Avenger(s) went to fight Thanos ? (Result)</a></h5>
+                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-2" href="div#accordion-1 .item-2">(Optional): Live Result Demonstrations</a></h5>
                             </div>
                             <div class="collapse item-2" role="tabpanel" data-parent="#accordion-1">
                                 <div class="card-body">
-                                    <p class="card-text">heroes<br>ANY<br>--------<br> &nbsp;War Machine<br> &nbsp;Nebula<br> &nbsp;Black Widow<br> &nbsp;Rocket<br> &nbsp;Captain America<br>&nbsp;Thor<br> &nbsp;Captain Marvel<br></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" role="tab">
-                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-3" href="div#accordion-1 .item-3">(Optional): Live Result Demonstrations</a></h5>
-                            </div>
-                            <div class="collapse item-3" role="tabpanel" data-parent="#accordion-1">
-                                <div class="card-body">
                                     <ul>
-                                        <li><a href="http://demo.openlinksw.com:8890/sparql?default-graph-uri=&amp;qtxt=PREFIX%20endgame%3A%20%3C%23%3E%0A%0ASELECT%20DISTINCT%0A%3Fname%20as%20%3Favenger%0A%3Fheist%0A%3Fyear%0A%3FstoneName%20as%20%3Fstone%0A%3Fsuccess%0AFROM%20%3Curn%3Amcu%3Aendgame%3E%0A%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%3FheistURI%20a%20endgame%3AEvent%3B%0A%20%20%20%20%20%20%20schema%3Aname%20%3Fheist%3B%0A%20%20%20%20%20%20%20endgame%3Ayear%20%3Fyear%3B%0A%20%20%20%20%20%20%20endgame%3AheistMembers%20%3Fhero%3B%0A%20%20%20%20%20%20%20endgame%3Atarget%20%3Fstone%3B%0A%20%20%20%20%20%20%20endgame%3AheistSuccess%20%3Fsuccess.%0A%0A%20%20%20%20%20%20%20%3Fhero%20schema%3Aname%20%3Fname.%0A%0A%20%20%20%20%20%20%20%3Fstone%20schema%3Aname%20%3FstoneName%0A%0A%7D&amp;should-sponge=&amp;format=text%2Fhtml&amp;timeout=20000">Query Definition</a></li>
-                                        <li><a href="http://demo.openlinksw.com:8890/sparql?default-graph-uri=&amp;query=PREFIX+endgame%3A+%3C%23%3E%0D%0A%0D%0ASELECT+DISTINCT%0D%0A%3Fname+as+%3Favenger%0D%0A%3Fheist%0D%0A%3Fyear%0D%0A%3FstoneName+as+%3Fstone%0D%0A%3Fsuccess%0D%0AFROM+%3Curn%3Amcu%3Aendgame%3E%0D%0A+++++%7B%0D%0A+++++++%3FheistURI+a+endgame%3AEvent%3B%0D%0A+++++++schema%3Aname+%3Fheist%3B%0D%0A+++++++endgame%3Ayear+%3Fyear%3B%0D%0A+++++++endgame%3AheistMembers+%3Fhero%3B%0D%0A+++++++endgame%3Atarget+%3Fstone%3B%0D%0A+++++++endgame%3AheistSuccess+%3Fsuccess.%0D%0A%0D%0A+++++++%3Fhero+schema%3Aname+%3Fname.%0D%0A%0D%0A+++++++%3Fstone+schema%3Aname+%3FstoneName%0D%0A%0D%0A%7D&amp;should-sponge=&amp;format=text%2Fhtml&amp;timeout=20000">Query Result</a></li>
+                                        <li><a href="http://demo.openlinksw.com:8890/sparql?default-graph-uri=&amp;qtxt=PREFIX%20endgame%3A%20%3C%23%3E%0A%0ASELECT%20DISTINCT%0A%3FheistURI%0A%3Fname%20as%20%3Favenger%0A%3Fheist%0A%3Fyear%0A%3FstoneName%20as%20%3Fstone%0A%3Fsuccess%0AFROM%20%3Curn%3Amcu%3Aendgame%3E%0A%20%20%20%7B%0A%20%20%20%20%3FheistURI%20a%20endgame%3AEvent%3B%0A%20%20%20%20schema%3Aname%20%3Fheist%3B%0A%20%20%20%20endgame%3Ayear%20%3Fyear%3B%0A%20%20%20%20endgame%3AheistMembers%20%3Fhero%3B%0A%20%20%20%20endgame%3Atarget%20%3Fstone%3B%0A%20%20%20%20endgame%3AheistSuccess%20%3Fsuccess.%0A%0A%20%20%20%20%3Fhero%20schema%3Aname%20%3Fname.%0A%0A%20%20%20%20%3Fstone%20schema%3Aname%20%3FstoneName%0A%0A%7D&amp;should-sponge=&amp;format=text%2Fx-html%2Btr&amp;timeout=20000">Query Definition</a></li>
+                                        <li><a href="http://demo.openlinksw.com:8890/sparql?default-graph-uri=&amp;query=PREFIX+endgame%3A+%3C%23%3E%0D%0A%0D%0ASELECT+DISTINCT%0D%0A%3FheistURI%0D%0A%3Fname+as+%3Favenger%0D%0A%3Fheist%0D%0A%3Fyear%0D%0A%3FstoneName+as+%3Fstone%0D%0A%3Fsuccess%0D%0AFROM+%3Curn%3Amcu%3Aendgame%3E%0D%0A+++%7B%0D%0A++++%3FheistURI+a+endgame%3AEvent%3B%0D%0A++++schema%3Aname+%3Fheist%3B%0D%0A++++endgame%3Ayear+%3Fyear%3B%0D%0A++++endgame%3AheistMembers+%3Fhero%3B%0D%0A++++endgame%3Atarget+%3Fstone%3B%0D%0A++++endgame%3AheistSuccess+%3Fsuccess.%0D%0A%0D%0A++++%3Fhero+schema%3Aname+%3Fname.%0D%0A%0D%0A++++%3Fstone+schema%3Aname+%3FstoneName%0D%0A%0D%0A%7D&amp;should-sponge=&amp;format=text%2Fx-html%2Btr&amp;timeout=20000">Query Result</a></li>
                                     </ul>
                                 </div>
                             </div>
