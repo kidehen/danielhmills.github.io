@@ -228,9 +228,9 @@
                     <div role="tablist" id="accordion-1">
                         <div class="card">
                             <div class="card-header" role="tab">
-                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="true" aria-controls="accordion-1 .item-1" href="div#accordion-1 .item-1">Query: Which stone heist did each Character take part in? Which year(s) did they visit, where was their heist located, and was their heist successful?&nbsp;</a></h5>
+                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-1" href="div#accordion-1 .item-1">Query: Which stone heist did each Character take part in? Which year(s) did they visit, where was their heist located, and was their heist successful?&nbsp;</a></h5>
                             </div>
-                            <div class="collapse show item-1" role="tabpanel" data-parent="#accordion-1">
+                            <div class="collapse item-1" role="tabpanel" data-parent="#accordion-1">
                                 <div class="card-body">
                                     <p class="card-text">PREFIX endgame: &lt;#&gt;<br><br>SELECT DISTINCT<br>?heistURI<br>?hero<br>?name as ?avenger<br>?heist<br>?locationUri<br>?location<br>?year<br>?stoneName as ?stone<br>?success<br>FROM &lt;urn:mcu:endgame&gt;<br>&nbsp;{<br>&nbsp;?heistURI
                                         a endgame:Event;<br>&nbsp;schema:name ?heist;<br>&nbsp;endgame:location ?locationUri;<br>&nbsp;endgame:year ?year;<br>&nbsp;endgame:heistMembers ?hero;<br>&nbsp;endgame:target ?stone;<br>&nbsp;endgame:heistSuccess
