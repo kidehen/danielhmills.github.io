@@ -17,7 +17,7 @@
           "type": "literal",
           "value": "Space Stone Heist #2"
         },
-        "locationUri": {
+        "locationURI": {
           "type": "uri",
           "value": "#camplehigh"
         },
@@ -56,7 +56,7 @@
           "type": "literal",
           "value": "Space Stone Heist #1"
         },
-        "locationUri": {
+        "locationURI": {
           "type": "uri",
           "value": "#nyc"
         },
@@ -95,7 +95,7 @@
           "type": "literal",
           "value": "Power Stone Heist"
         },
-        "locationUri": {
+        "locationURI": {
           "type": "uri",
           "value": "#morag"
         },
@@ -134,7 +134,7 @@
           "type": "literal",
           "value": "Power Stone Heist"
         },
-        "locationUri": {
+        "locationURI": {
           "type": "uri",
           "value": "#morag"
         },
@@ -173,7 +173,7 @@
           "type": "literal",
           "value": "Soul Stone Heist"
         },
-        "locationUri": {
+        "locationURI": {
           "type": "uri",
           "value": "#vormir"
         },
@@ -212,7 +212,7 @@
           "type": "literal",
           "value": "Time Stone Heist"
         },
-        "locationUri": {
+        "locationURI": {
           "type": "uri",
           "value": "#nyc"
         },
@@ -251,7 +251,7 @@
           "type": "literal",
           "value": "Soul Stone Heist"
         },
-        "locationUri": {
+        "locationURI": {
           "type": "uri",
           "value": "#vormir"
         },
@@ -290,7 +290,7 @@
           "type": "literal",
           "value": "Reality Stone Heist"
         },
-        "locationUri": {
+        "locationURI": {
           "type": "uri",
           "value": "#asgard"
         },
@@ -329,7 +329,7 @@
           "type": "literal",
           "value": "Space Stone Heist #2"
         },
-        "locationUri": {
+        "locationURI": {
           "type": "uri",
           "value": "#camplehigh"
         },
@@ -368,7 +368,7 @@
           "type": "literal",
           "value": "Mind Stone Heist"
         },
-        "locationUri": {
+        "locationURI": {
           "type": "uri",
           "value": "#nyc"
         },
@@ -407,7 +407,7 @@
           "type": "literal",
           "value": "Reality Stone Heist"
         },
-        "locationUri": {
+        "locationURI": {
           "type": "uri",
           "value": "#asgard"
         },
@@ -446,7 +446,7 @@
           "type": "literal",
           "value": "Space Stone Heist #1"
         },
-        "locationUri": {
+        "locationURI": {
           "type": "uri",
           "value": "#nyc"
         },
