@@ -264,7 +264,7 @@ schema:name "Asgard";
 schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/2/26/AsgardFull.jpg/revision/latest?cb=20180421164352>;
 schema:filmTimeline <#thorthedarkworld>.
 
-<#campleheigh>
+<#camplehigh>
 a schema:Place;
 schema:name "Camp Lehigh";
 schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/1/1c/Camp_Lehigh2.png/revision/latest/scale-to-width-down/620?cb=20150105014102>.
