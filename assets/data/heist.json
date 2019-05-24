@@ -29,6 +29,10 @@
           "type": "literal",
           "value": "1970"
         },
+        "stoneURI": {
+          "type": "uri",
+          "value": "#spacestone"
+        },
         "stoneName": {
           "type": "literal",
           "value": "Space Stone"
@@ -67,6 +71,10 @@
         "year": {
           "type": "literal",
           "value": "2012"
+        },
+        "stoneURI": {
+          "type": "uri",
+          "value": "#spacestone"
         },
         "stoneName": {
           "type": "literal",
@@ -107,6 +115,10 @@
           "type": "literal",
           "value": "2012"
         },
+        "stoneURI": {
+          "type": "uri",
+          "value": "#powerstone"
+        },
         "stoneName": {
           "type": "literal",
           "value": "Power Stone"
@@ -145,6 +157,10 @@
         "year": {
           "type": "literal",
           "value": "2012"
+        },
+        "stoneURI": {
+          "type": "uri",
+          "value": "#powerstone"
         },
         "stoneName": {
           "type": "literal",
@@ -185,6 +201,10 @@
           "type": "literal",
           "value": "2014"
         },
+        "stoneURI": {
+          "type": "uri",
+          "value": "#soulstone"
+        },
         "stoneName": {
           "type": "literal",
           "value": "Soul Stone"
@@ -223,6 +243,10 @@
         "year": {
           "type": "literal",
           "value": "2012"
+        },
+        "stoneURI": {
+          "type": "uri",
+          "value": "#timestone"
         },
         "stoneName": {
           "type": "literal",
@@ -263,6 +287,10 @@
           "type": "literal",
           "value": "2014"
         },
+        "stoneURI": {
+          "type": "uri",
+          "value": "#soulstone"
+        },
         "stoneName": {
           "type": "literal",
           "value": "Soul Stone"
@@ -301,6 +329,10 @@
         "year": {
           "type": "literal",
           "value": "2013"
+        },
+        "stoneURI": {
+          "type": "uri",
+          "value": "#realitystone"
         },
         "stoneName": {
           "type": "literal",
@@ -341,6 +373,10 @@
           "type": "literal",
           "value": "1970"
         },
+        "stoneURI": {
+          "type": "uri",
+          "value": "#spacestone"
+        },
         "stoneName": {
           "type": "literal",
           "value": "Space Stone"
@@ -379,6 +415,10 @@
         "year": {
           "type": "literal",
           "value": "2012"
+        },
+        "stoneURI": {
+          "type": "uri",
+          "value": "#mindstone"
         },
         "stoneName": {
           "type": "literal",
@@ -419,6 +459,10 @@
           "type": "literal",
           "value": "2013"
         },
+        "stoneURI": {
+          "type": "uri",
+          "value": "#realitystone"
+        },
         "stoneName": {
           "type": "literal",
           "value": "Reality Stone"
@@ -457,6 +501,10 @@
         "year": {
           "type": "literal",
           "value": "2012"
+        },
+        "stoneURI": {
+          "type": "uri",
+          "value": "#spacestone"
         },
         "stoneName": {
           "type": "literal",
