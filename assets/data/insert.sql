@@ -7,65 +7,65 @@ INSERT INTO GRAPH <urn:mcu:endgame> {
 <#ironman>
 schema:name "Iron Man";
 schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/3/35/IronMan-EndgameProfile.jpg/revision/latest/scale-to-width-down/620?cb=20190423175213>;
-schema:memberOf <#theavengers>;
+schema:memberOf <#TheAvengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#warmachine>
 schema:name "War Machine";
 schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/7/77/WarMachine-EndgameProfile.jpg/revision/latest?cb=20190423174940>;
-schema:memberOf <#theavengers>;
+schema:memberOf <#TheAvengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#nebula>
 schema:name "Nebula";
 schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/0/05/Nebula-EndgameProfile.jpg/revision/latest?cb=20190423175315>;
-schema:memberOf <#theavengers>;
+schema:memberOf <#TheAvengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#blackwidow>
 schema:name "Black Widow";
 schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/9/9a/BlackWidow-EndgameProfile.jpg/revision/latest?cb=20190423174842>;
-schema:memberOf <#theavengers>;
+schema:memberOf <#TheAvengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#hulk>
 schema:name "Hulk";
 schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/a/a4/ProfHulkAvengersEndgamelicensingart001.jpg/revision/latest?cb=20190506122658>;
-schema:memberOf <#theavengers>;
+schema:memberOf <#TheAvengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#hawkeye>
 schema:name "Hawkeye";
 schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/0/08/HawkeyeRonin-EndgameProfile.jpg/revision/latest/scale-to-width-down/620?cb=20190423175147>;
-schema:memberOf <#theavengers>;
+schema:memberOf <#TheAvengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#rocket>
 schema:name "Rocket";
 schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/3/34/Rocket-EndgameProfile.jpg/revision/latest/scale-to-width-down/620?cb=20190423175032>;
-schema:memberOf <#theavengers>;
+schema:memberOf <#TheAvengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#captainamerica>
 schema:name "Captain America";
 schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/d/d7/CapAmerica-EndgameProfile.jpg/revision/latest?cb=20190423175339>;
-schema:memberOf <#theavengers>;
+schema:memberOf <#TheAvengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#thor>
 schema:name "Thor";
 schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/1/13/Thor-EndgameProfile.jpg/revision/latest?cb=20190423174911>;
-schema:memberOf <#theavengers>;
+schema:memberOf <#TheAvengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#antman>
 schema:name "Ant-Man";
-schema:memberOf <#theavengers>;
+schema:memberOf <#TheAvengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#captainmarvel>
 schema:name "Captain Marvel";
-schema:memberOf <#theavengers>;
+schema:memberOf <#TheAvengers>;
 endgame:survivedDecimation "true"^^xsd:boolean.
 
 <#bucky>
@@ -78,7 +78,7 @@ endgame:survivedDecimation "false"^^xsd:boolean.
 
 <#falcon>
 schema:name "Falcon";
-schema:memberOf <#theavengers>;
+schema:memberOf <#TheAvengers>;
 endgame:survivedDecimation "false"^^xsd:boolean.
 
 <#scarletwitch>
@@ -189,7 +189,7 @@ a endgame:Event;
 schema:name "Space Stone Heist #1";
 endgame:location <#nyc>;
 endgame:year "2012";
-endgame:pastFilm <#theavengers-film>;
+endgame:pastFilm <#TheAvengers-film>;
 endgame:target <#spacestone>;
 endgame:heistMembers <#ironman>, <#antman>;
 endgame:heistSuccess "false"^^xsd:boolean.
@@ -200,7 +200,7 @@ schema:name "Space Stone Heist #2";
 endgame:location <#camplehigh>;
 endgame:year "1970";
 endgame:target <#spacestone>;
-endgame:pastFilm <#theavengers-film>;
+endgame:pastFilm <#TheAvengers-film>;
 endgame:heistMembers <#ironman>, <#captainamerica>;
 endgame:heistSuccess "true"^^xsd:boolean.
 
@@ -209,7 +209,7 @@ a endgame:Event;
 schema:name "Mind Stone Heist";
 endgame:location <#nyc>;
 endgame:year "2012";
-endgame:pastFilm <#theavengers-film>;
+endgame:pastFilm <#TheAvengers-film>;
 endgame:target <#mindstone>;
 endgame:heistMembers <#captainamerica>;
 endgame:heistSuccess "true"^^xsd:boolean.
@@ -229,7 +229,7 @@ a endgame:Event;
 schema:name "Time Stone Heist";
 endgame:location <#nyc>;
 endgame:year "2012";
-endgame:pastFilm <#theavengers-film>;
+endgame:pastFilm <#TheAvengers-film>;
 endgame:target <#timestone>;
 endgame:heistMembers <#hulk>;
 endgame:heistSuccess "true"^^xsd:boolean.
@@ -256,7 +256,7 @@ schema:schema:filmTimeline <#guardiansofthegalaxy>.
 a schema:Place;
 schema:name "New York City";
 schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/c/c9/SMFarFromHomeTrailer2.png/revision/latest?cb=20190506140258>;
-schema:filmTimeline <#theavengers-film>.
+schema:filmTimeline <#TheAvengers-film>.
 
 <#asgard>
 a schema:Place;
@@ -264,7 +264,7 @@ schema:name "Asgard";
 schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/2/26/AsgardFull.jpg/revision/latest?cb=20180421164352>;
 schema:filmTimeline <#thorthedarkworld>.
 
-<#campleheigh>
+<#camplehigh>
 a schema:Place;
 schema:name "Camp Lehigh";
 schema:image <https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/1/1c/Camp_Lehigh2.png/revision/latest/scale-to-width-down/620?cb=20150105014102>.
@@ -285,10 +285,10 @@ owl:sameAs <http://dbpedia.org/resource/Avengers:_Infinity_War>.
 
 #Classes
 
-endgame:Avenger
+endgame:TheAvengers
 a owl:Class;
-schema:name "Avenger";
-schema:description "A member of the Avengers group";
+schema:name "The Avengers";
+schema:description "A group of extraordinary individuals started by Nick Fury";
 rdfs:subClassOf schema:Person.
 
 endgame:Event
